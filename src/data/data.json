@@ -1,0 +1,17 @@
+{
+    "Header" : {
+        "title" : "something something",
+        "paragraph": "SOMETHING PARAGRAPH"
+
+    },
+    "Tools" :{
+        "title" : "something something"
+    },
+    "Feature" :{
+        "title" : "something something"
+    },
+    "Footer" :{
+        "title" : "something something"
+    }
+
+}
