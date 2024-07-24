@@ -17,8 +17,8 @@ export const Navbar = (props) => {
           <a class="navbar-brand page-scroll header-title" href="/">Community Source Hub</a> </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="" class="page-scroll header-link">Home</a></li>
-            <li><a href="" class="page-scroll header-link">Tools</a></li>
+            <li><a href="#header" class="page-scroll header-link">Home</a></li>
+            <li><a href="#tools" class="page-scroll header-link">Tools</a></li>
             <li><a href="" class="page-scroll header-link">Contribute</a></li>
           </ul>
         </div>
