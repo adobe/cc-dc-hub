@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@adobe/react-spectrum": "^3.35.1",
+    "@adobe/react-spectrum": "^3.36.0",
+    "@react-spectrum/button": "^3.16.5",
+    "@react-spectrum/theme-default": "^3.5.11",
     "@spectrum-web-components/card": "^0.43.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
