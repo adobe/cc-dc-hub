@@ -1,11 +1,11 @@
 import React from "react";
-import './Splash.css'
-import { Button, ButtonGroup, Flex, Heading } from '@adobe/react-spectrum';
+import './splash.css';
+import { Button, ButtonGroup, Flex, Heading, View } from '@adobe/react-spectrum';
 
-export const Splash = (props) => {
+export const Splash = () => {
   return (
-    <header id="header" >
-      <div class="intro">
+    <header id="header">
+      <div class="intro u-d-flex u-justify-content-center u-align-items-center">
         <div class="col-md-8 col-md-offset-2 intro-text">
           <Flex direction="column" justifyContent={"center"}>
             <Heading level={1} >
@@ -13,11 +13,13 @@ export const Splash = (props) => {
               <span className="u-text-white u-font-weight-bold"> Unlock Your Full <br /> Potential with Community Source <br /> Hub's Solution</span></Heading>
             <Heading level={3}>
               <span className="u-text-white">Seamlessly integrate and leverage cutting-edge Tolls to prople your success<br /> and unlock new horizons of achivement</span>
-              </Heading>
-            <ButtonGroup align="center" >
-              <Button variant="accent" width="size-1600" height={"40px"} borderRadius="large">Rate Now</Button>
-              <Button variant="negative" staticColor="white" style="fill" width="size-1600" height={"40px"}>No, thanks</Button>
-            </ButtonGroup>
+            </Heading>
+            <View marginTop="size-400">
+              <ButtonGroup align="center">
+                <Button variant="accent" width={{ base: "100%", M: "size-1600", }} height={"60px"} borderRadius="large">Rate Now</Button>
+                <Button variant="negative" staticColor="white" style="fill" width={{ base: "100%", M: "size-1600", }} height={"60px"}>No, thanks</Button>
+              </ButtonGroup>
+            </View>
           </Flex>
         </div>
       </div>
