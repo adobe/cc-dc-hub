@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Utility classes */
+.u-font-weight-bold {
+  font-weight: bold;
+}
+
+.u-text-white {
+  color: #FFFFFF;
+}
+
+/* Flex box */
+.u-d-flex { display: flex; }
+.u-justify-content-center { justify-content: center; }
+.u-justify-content-between { justify-content: space-between; }
+.u-justify-content-around { justify-content: space-around; }
+.u-justify-content-evenly { justify-content: space-evenly; }
+.u-justify-content-evenly { justify-content: flex-end; }
+.u-align-items-center { align-items: center; }
+
+
+/* Height */
+.u-height-full { height: 100%; }
+
+/* Shadow */
+.u-default-shadow {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

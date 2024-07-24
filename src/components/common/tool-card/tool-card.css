@@ -1,0 +1,15 @@
+.tool-link {
+  color: black;
+  font-weight: bold;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-decoration: none !important;
+}
+
+.image-container {
+  margin-top: .625rem;
+}
+
+.image-container img {
+  border-radius: 50%;
+}

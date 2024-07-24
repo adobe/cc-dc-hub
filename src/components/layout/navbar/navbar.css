@@ -1,0 +1,8 @@
+#menu.navbar .header-title {
+    text-transform: capitalize;
+}
+
+#menu.navbar .header-link {
+    color: black;
+    font-weight: 500;
+}
