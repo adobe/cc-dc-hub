@@ -1,3 +1,4 @@
+export * from './apps/Apps';
 export * from './tools/Tools'
 export * from './navbar/Navbar';
 export * from './footer/Footer';

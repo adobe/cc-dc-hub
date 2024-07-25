@@ -1,7 +1,6 @@
 import '../../index.css';
 import React, { useState, useEffect } from 'react';
-import { Navbar, Footer, Splash, Tools, Feature, Contribute } from "../../components";
-// import { Apps } from "./components/Apps";
+import { Navbar, Footer, Splash, Tools, Feature, Contribute, Apps } from "../../components";
 import { Provider, defaultTheme } from '@adobe/react-spectrum';
 import JsonData from "../../data/data.json";
 
@@ -18,9 +17,9 @@ const Home = () => {
       <Splash data={landingPageData.Splash} />
       <Tools data={landingPageData.Tools} />
       <Feature data={landingPageData.Feature} />
-      {/* <Apps data={landingPageData.Apps} /> */}
+      <Apps data={landingPageData.Apps} />
       <Contribute data={landingPageData.Contribute} />
-      {/* <Footer data={landingPageData.Footer} /> */}
+      <Footer data={landingPageData.Footer} />
     </Provider>
   );
 }

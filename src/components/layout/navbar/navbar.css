@@ -4,12 +4,12 @@
 
 #menu.navbar .header-link {
   color: black;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 /* Navbar */
 #menu {
-  padding: 15px;
+  padding: 15px 0;
   transition: all 0.8s;
   background-color: #fff
 }

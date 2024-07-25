@@ -17,7 +17,7 @@ export const Contribute = (props) => {
         <Flex direction="column" alignItems="center" >
           <View />
           <View>
-            <Heading level={1} alignSelf="center" >Like to Contribute? We'd Love to Hear From You!</Heading>
+            <Heading level={1} alignSelf="center" marginBottom="size-400">Like to <span class="splash-header">Contribute?</span> We'd Love to Hear From You!</Heading>
             <Button align="center" variant="accent" height={"60px"} width={"150px"}>Rate Now</Button>
           </View>
           <View />
