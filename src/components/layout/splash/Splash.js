@@ -6,11 +6,11 @@ export const Splash = () => {
   return (
     <header id="header">
       <div class="intro u-d-flex u-justify-content-center u-align-items-center">
-        <div class="col-md-8 col-md-offset-2 intro-text">
+        <div class="col-md-8 intro-text">
           <Flex direction="column" justifyContent={"center"}>
             <Heading level={1} >
               <span className="splash-header u-font-weight-bold">Empowering Success:</span>
-              <span className="u-text-white u-font-weight-bold"> Unlock Your Full <br /> Potential with Community Source <br /> Hub's Solution</span></Heading>
+              <span className="u-text-white u-font-weight-bold"> Unlock Your Full Potential with Community Source Hub's Solution</span></Heading>
             <Heading level={3}>
               <span className="u-text-white">Seamlessly integrate and leverage cutting-edge Tolls to prople your success<br /> and unlock new horizons of achivement</span>
             </Heading>

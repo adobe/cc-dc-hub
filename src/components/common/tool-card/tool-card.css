@@ -13,3 +13,7 @@
 .image-container img {
   border-radius: 50%;
 }
+
+.tool {
+  width: unset;
+}
