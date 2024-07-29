@@ -9,8 +9,8 @@ export const Tools = (props) => {
   return (
     <Flex alignItems="center" justifyContent="center" direction="column">
       <div id="tools" className="tools col-md-8">
-        <Heading level={1} marginX="auto" maxWidth="fit-content" marginTop="80px">Tools</Heading>
-        <Flex justifyContent="center" marginTop="size-500" marginBottom="size-500" alignItems="center">
+        {/* <Heading level={1} marginX="auto" maxWidth="fit-content" marginTop="80px">Tools</Heading> */}
+        <Flex justifyContent="center" marginTop="size-1000" marginBottom="size-1000" alignItems="center">
           <Grid
             areas={{
               base: [

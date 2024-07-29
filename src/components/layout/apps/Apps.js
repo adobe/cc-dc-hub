@@ -12,7 +12,7 @@ export const Apps = (props) => {
         <div className="col-md-8">
           <Flex direction="row" gap="size-200" justifyContent="center" alignContent='space-around' wrap>
             {imageList.map((image, index) => (
-              <img key={index} src={image} />
+              <img key={index} src={image} className="app-img" />
               ))}
           </Flex>
         </div>
