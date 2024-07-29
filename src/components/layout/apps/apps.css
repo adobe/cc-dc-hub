@@ -1,4 +1,10 @@
 .apps {
-    padding: 3rem;
-    background-color: #CF9FFF;
+  padding: 3rem;
+  /* background-color: #CF9FFF; */
+}
+
+.apps .app-img:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+  transition: transform 1s;
 }
