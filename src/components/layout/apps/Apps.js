@@ -3,7 +3,7 @@ import './apps.css'
 import { Flex } from '@adobe/react-spectrum'
 
 export const Apps = (props) => {
-  const images = require.context('../../../assets/icons', true);
+  const images = require.context('../../../assets/app-icons', true);
   const imageList = images.keys().map(image => images(image));
 
   return (

@@ -36,7 +36,7 @@ export const Tools = (props) => {
             height="size-10000"
             width="100%"
             gap="size-1000">
-            {TOOLS.map(prop => <ToolCard  {...prop} />)}
+            {TOOLS.map((prop, index) => <ToolCard key={index} {...prop} />)}
           </Grid>
         </Flex>
 

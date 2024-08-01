@@ -5,8 +5,8 @@ import { Button, ButtonGroup, Flex, Heading, View } from '@adobe/react-spectrum'
 export const Splash = () => {
   return (
     <header id="header">
-      <div class="intro u-d-flex u-justify-content-center u-align-items-center">
-        <div class="col-md-8 intro-text">
+      <div className="intro u-d-flex u-justify-content-center u-align-items-center">
+        <div className="col-md-8 intro-text">
           <Flex direction="column" justifyContent={"center"}>
             <Heading level={1} >
               <span className="splash-header u-font-weight-bold">Empowering Success:</span>

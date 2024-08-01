@@ -1,0 +1,33 @@
+{
+    "title": "ACS & DC Integrations",
+    "tagLine": "Seamless Integration Made Simple: Enhancing Application Usability with ACS & DC Integrated Solutions",
+    "bulletInfo": [
+        {
+            "bulletIcon" : "tool",
+            "bulletTitle": "What ACS & DC Tools Are",
+            "bulletDesc": "Simplify the lives of DC developers with our comprehensive toolbox, empowering them with a versatile set of tools. Streamline workflows, enhance productivity, and unlock new levels of efficiency in just a few clicks."
+        },
+        {
+            "bulletIcon" : "gear",
+            "bulletTitle": "When to use ACS & DC Tools",
+            "bulletDesc": "Empower developers and admins with the essential ACS DC Tools designed to streamline the entire lifecycle of Document Cloud Solutions, from initial setup and development to migration and day-to-day operations. Simplify complex tasks, boost productivity, and maximize the efficiency of your ACS DC environment with our comprehensive toolkit."
+        },
+        {
+            "bulletIcon" : "file",
+            "bulletTitle": "What ACS Samples Are",
+            "bulletDesc": "Educational DC Building Blocks: Well-Commented Code Samples for Enlightening DC Developers. Accelerate Your Implementation with Structural Skeletons and Empower Your Own Solutions!"
+        }
+    ],
+    "highlightFeature": [
+        {
+            "highlightTitle": "Sign to Sign Migration",
+            "highlightDesc": "Simplify Template Migration: Our intuitive desktop application seamlessly transfers templates between Sign instances, eliminating the complexities of manual migration. Effortlessly manage and relocate templates, ensuring a smooth transition and saving valuable time in the process. Empower your workflow by streamlining template migration with our user-friendly desktop solution.",
+            "highlightImg": ""
+        },
+        {
+            "highlightTitle": "Sign to Sign Migration",
+            "highlightDesc": "Simplify Template Migration: Our intuitive desktop application seamlessly transfers templates between Sign instances, eliminating the complexities of manual migration. Effortlessly manage and relocate templates, ensuring a smooth transition and saving valuable time in the process. Empower your workflow by streamlining template migration with our user-friendly desktop solution.",
+            "highlightImg": ""
+        }
+    ]
+}

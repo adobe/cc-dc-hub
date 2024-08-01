@@ -4,7 +4,7 @@ import { Heading, Text, Image, View, Link, Content } from "@adobe/react-spectrum
 
 export const ToolCard = ({ bgColorClass, title, description, img, link }) => {
   return (
-    <div class={`${bgColorClass} tool`}>
+    <div className={`${bgColorClass} tool`}>
       <View padding="size-10" gridArea="one">
         <Heading center><span className="u-font-weight-bold">{title}</span></Heading>
         <Text>{description}</Text>

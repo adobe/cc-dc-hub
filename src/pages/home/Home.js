@@ -13,13 +13,13 @@ const Home = () => {
 
   return (
     <Provider theme={defaultTheme}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Splash data={landingPageData.Splash} />
       <Tools data={landingPageData.Tools} />
       <Feature data={landingPageData.Feature} />
       <Apps data={landingPageData.Apps} />
       <Contribute data={landingPageData.Contribute} />
-      <Footer data={landingPageData.Footer} />
+      {/* <Footer data={landingPageData.Footer} /> */}
     </Provider>
   );
 }
