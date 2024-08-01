@@ -13,16 +13,16 @@ export const Navbar = (props) => {
     // </Flex>
 
     <nav id="menu" className="navbar nabar-default navbar-fixed-top u-d-flex u-justify-content-center">
-      <div class="col-md-8">
+      <div className="col-md-8">
         <Flex justifyContent="space-between">
-          <div class="navbar-header">
-            <a class="navbar-brand page-scroll header-title" href="/">Community Source Hub</a> 
+          <div className="navbar-header">
+            <a className="navbar-brand page-scroll header-title" href="/">Community Source Hub</a> 
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#header" class="page-scroll header-link">Home</a></li>
-              <li><a href="#tools" class="page-scroll header-link">Tools</a></li>
-              <li><a href="#contribute" class="page-scroll header-link">Contribute</a></li>
+          <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul className="nav navbar-nav">
+              <li><a href="/" className="page-scroll header-link">Home</a></li>
+              <li><a href="/tools" className="page-scroll header-link">Tools</a></li>
+              <li><a href="#contribute" className="page-scroll header-link">Contribute</a></li>
             </ul>
           </div>
         </Flex>

@@ -3,6 +3,10 @@
   /* background-color: #CF9FFF; */
 }
 
+.app-img {
+  height: 100px;
+}
+
 .apps .app-img:hover {
   cursor: pointer;
   transform: scale(1.5, 1.5);

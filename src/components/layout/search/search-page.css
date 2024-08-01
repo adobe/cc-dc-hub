@@ -1,0 +1,190 @@
+/*****************************************************
+                SEARCH STYLES  
+*****************************************************/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  place-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 75px;
+}
+
+.pageBackgroundContainer {
+  /* width: 100vw; */
+  height: 100%;
+  background-color: white;
+}
+
+.pageBackgroundContainer p {
+  text-shadow: none;
+}
+
+.pageBackgroundContainer h1 {
+  color: white;
+  text-shadow: none;
+}
+
+h2 {
+  color: black
+}
+
+.cardContainer {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  width: 100%;
+}
+
+.contentUpdate {
+  margin-bottom: 100px;
+  color: black;
+}
+
+.searchFilterContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.filterIconContainer {
+  cursor: pointer;
+  position: relative;
+}
+
+.filterDropdownContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  width: 100%;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.filterDropdownContainerHidden {
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+}
+
+.searchCheckbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchCheckbox img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
+}
+
+.searchCheckbox h2 {
+  font-size: 1rem;
+  padding: 0px 10px;
+}
+
+.searchInputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.searchInputField {
+  height: 30px;
+}
+
+.containerBg {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/ToolsBackground1.jpg');
+}
+
+/*****************************************************
+                MEDIA QUERIES  
+*****************************************************/
+@media (max-width: 767px) {
+  .cardContainer {
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .content {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1619px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1620px) and (max-width: 2559px) {
+  .content {
+    width: 65%;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .content {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 3840px) {
+  .content {
+    width: 40%;
+  }
+}

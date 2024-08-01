@@ -1,0 +1,34 @@
+{
+    "title": "ACS DC Tools",
+    "tagLine": "Streamline Your Experience: Unlocking Effortless Application Usage with Powerful ACS & DC Tools",
+    "bulletInfo": [
+        {
+            "bulletIcon" : "tool",
+            "bulletTitle": "What ACS Samples Are",
+            "bulletDesc": "Educational DC Building Blocks: Well-Commented Code Samples for Enlightening DC Developers. Accelerate Your Implementation with Structural Skeletons and Empower Your Own Solutions!"
+        },
+        {
+            "bulletIcon" : "gear",
+            "bulletTitle": "What ACS Samples Are ",
+            "bulletDesc": "Educational DC Building Blocks: Well-Commented Code Samples for Enlightening DC Developers. Accelerate Your Implementation with Structural Skeletons and Empower Your Own Solutions!"
+        },
+        {
+            "bulletIcon" : "file",
+            "bulletTitle": "What ACS Samples Are ",
+            "bulletDesc": "Educational DC Building Blocks: Well-Commented Code Samples for Enlightening DC Developers. Accelerate Your Implementation with Structural Skeletons and Empower Your Own Solutions!"
+        }
+    ],
+    "highlightFeature": [
+        {
+            "highlightTitle": "Sign to Sign Migration",
+            "highlightDesc": "Simplify Template Migration: Our intuitive desktop application seamlessly transfers templates between Sign instances, eliminating the complexities of manual migration. Effortlessly manage and relocate templates, ensuring a smooth transition and saving valuable time in the process. Empower your workflow by streamlining template migration with our user-friendly desktop solution.",
+            "hightlightImg": ""
+        
+        },
+        {
+            "highlightTitle": "Sign to Sign Migration",
+            "highlightDesc": "Educational DC Building Blocks: Well-Commented Code Samples for Enlightening DC Developers. Accelerate Your Implementation with Structural Skeletons and Empower Your Own Solutions!",
+            "hightlightImg": ""
+        }
+    ]
+}

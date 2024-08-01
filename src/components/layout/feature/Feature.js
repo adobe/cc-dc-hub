@@ -5,11 +5,11 @@ import { Heading } from '@adobe/react-spectrum';
 export const Feature = (props) => {
   return (
     <header id="features" >
-      <div class="feature-intro">
-        <div class="intro-text">
+      <div className="feature-intro">
+        <div className="intro-text">
           <Heading level={1}>
             <span className="feature-text">
-              Unlesh Our Versatile <span class="splash-header">API</span> Anywhere, <br/>
+              Unleash Our Versatile <span className="splash-header">API</span> Anywhere, <br/>
               Anytime!
             </span>
           </Heading>

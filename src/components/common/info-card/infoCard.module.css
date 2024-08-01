@@ -1,0 +1,97 @@
+/*****************************************************
+                INFO CARD STYLES  
+*****************************************************/
+.infoCard{
+    height: 100%;
+    background-color: white;
+    color: #797979;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+}
+
+.infoCard:hover{
+    box-shadow: -1px -1px 10px rgba(73, 9, 194, .2), 10px 10px 10px rgba(73, 9, 194, .5);
+    transition: all 0.3s ease-in-out;
+}
+
+.infoCardContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.infoCardItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.infoCard h3{
+    font-size: 1rem;
+    color: #4909C2;
+    margin: 0px 10px;
+    text-align: left;
+}
+
+.infoCardFeatureType{
+    width: 30px;
+    height: 30px;
+}
+
+.infoCardTitle{
+    display: flex;
+    /* height: 10%; */
+}
+
+.infoCardBody{
+    display: flex;
+    height: 70%;
+    align-items: flex-start;
+}
+
+.infoCardFooter{
+    display: flex;
+    /* height: 10%; */
+    justify-content: space-between;
+}
+
+.itemDesc{
+    font-size: .8rem;
+    text-align: left;
+}
+
+
+.infoCardFooterItem{
+    display: flex;
+}
+
+.infoProductIcon{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+/*****************************************************
+                MEDIA QUERIES  
+*****************************************************/
+@media (max-width: 767px) {
+    .itemDesc{
+        font-size: .6rem;
+        text-align: left;
+    }
+
+    .infoCardFooter{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        width: 100%;
+    }
+  }

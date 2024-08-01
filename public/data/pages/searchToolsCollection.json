@@ -1,0 +1,47 @@
+[
+    {
+        "id": "PowerAutomateSamples",
+        "title": "Power Automate Samples",
+        "desc": "A set of sample flows for Power Automate to help you get started with common use cases",
+        "featureType": "sample",
+        "productType": ["Sign"],
+        "adobeCertified": false,
+        "featureFileName": "PowerAutomateSamples"
+    },
+    {
+        "id": "SignToSignMigration",
+        "title": "Sign to Sign Template Migration Tool",
+        "desc": "A tool to assist with migration templates from one Sign account to another. Supports cross-shard commercial account migration, commercial to Sign For Gov and developer account to either commercial or Gov. ",
+        "featureType": "tool",
+        "productType": ["Sign"],
+        "adobeCertified": false,
+        "featureFileName": "SignToSignMigration"
+    },
+    {
+        "id": "dc-sign-list-templates",
+        "title": "Acrobat Sign List Templates",
+        "desc": "Java-based command-line tool to list all the library templates in an Acrobat Sign account (in CSV format)",
+        "featureType": "tool",
+        "productType": ["Sign"],
+        "adobeCertified": false,
+        "featureFileName": "dc-sign-list-templates"
+    },
+    {
+        "id": "dc-sign-list-webforms",
+        "title": "Acrobat Sign List Web Forms",
+        "desc": "Java-based command-line tool to list all the web forms in an Acrobat Sign account (in CSV format)",
+        "featureType": "tool",
+        "productType": ["Sign"],
+        "adobeCertified": false,
+        "featureFileName": "dc-sign-list-webforms"
+    },
+    {
+        "id": "dc-sign-list-workflows",
+        "title": "Acrobat Sign List Workflows",
+        "desc": "Java-based command-line tool to list all the custom workflows in an Acrobat Sign account (in CSV format)",
+        "featureType": "tool",
+        "productType": ["Sign"],
+        "adobeCertified": false,
+        "featureFileName": "dc-sign-list-workflows"
+    }
+]

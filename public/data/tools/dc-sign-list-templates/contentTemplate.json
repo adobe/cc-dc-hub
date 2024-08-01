@@ -1,0 +1,40 @@
+{
+    "title": "Acrobat Sign List Templates",
+    "tagLine": "Obtain a list of all the templates in your Acrobat Sign account",
+    "version": "3.0.0",
+    "creator": "Chris Hughes",
+    "keyFeature": [
+        {
+            "title": "List All Templates",
+            "desc": "Keep track of all the templates that exist throughout your Acrobat Sign account"
+        },
+        {
+            "title": "Supports Sandbox Account",
+            "desc": "Use the optional --sandbox switch to use with Sandbox account"
+        },
+        {
+            "title": "Concise Output Format",
+            "desc": "Output is intentionally concise to easily support directing to a CSV file for further analysis"
+        }
+    ],
+    "content": [
+        {
+            "type": "text",
+            "content": "Java-based command-line tool to list all the library templates in an Acrobat Sign account (in CSV format)"
+        },
+        {
+            "type": "image",
+            "content": "example-usage.png"
+        }
+    ],
+    "installation": [
+        {
+            "type": "text",
+            "content": "Set-Up Instructions\n\n• Download Java 1.8, if you don't already have it installed on your machine\n• Add IP addresses to your allow list, if needed\n\nAs the tool makes use of the Acrobat Sign REST API, it is necessary to provide an integration key for your account\n\nUsage\n\nExecute the following command, replacing\n• <version> with the appropriate value for the release, such as 3.0.0\n• <integrationKey> with your integration key\n• [--sandbox] optional flag if the integration key is for a Sandbox account\n\njava -jar dc-sign-list-templates-<version>.jar <integrationKey> [--sandbox]"
+        },
+        {
+            "type": "link",
+            "content": "https://github.com/adobe/dc-sign-list-templates"
+        }
+    ]
+}
