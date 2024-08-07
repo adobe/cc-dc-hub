@@ -1,0 +1,17 @@
+.contribution-header {
+  height: 40vh;
+  margin-top: 5rem;
+  text-align: center;
+  background-image: url(../../assets/ToolsBackground2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background-color: #EEE; */
+  /* color: #777; */
+}
+
+.contribution-title {
+  color: #FFC55A;
+  text-transform: capitalize;
+  font-weight: 700;
+}

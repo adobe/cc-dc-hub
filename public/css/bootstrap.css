@@ -1097,8 +1097,9 @@ html {
     line-height: inherit;
   }
   a {
-    color: #337ab7;
+    color: #e6cd43;
     text-decoration: none;
+    font-weight: bold;
   }
   a:hover,
   a:focus {

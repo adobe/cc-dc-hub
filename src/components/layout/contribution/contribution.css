@@ -1,0 +1,13 @@
+.contribution-section {
+  padding: 2rem;
+  display: flex;
+  background-color: #F6F6F6;
+  font-family: Poppins, sans-serif;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-container {
+  width: 60vw;
+  margin: 1rem;
+}

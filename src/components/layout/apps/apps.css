@@ -1,10 +1,10 @@
 .apps {
-  padding: 3rem;
-  /* background-color: #CF9FFF; */
+  padding: 1.2rem;
+  /* background-color: #edebef;  */
 }
 
 .app-img {
-  height: 100px;
+  height: 75px;
 }
 
 .apps .app-img:hover {
