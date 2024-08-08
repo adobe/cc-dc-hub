@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import Layout from './Layout';
-import Home from './pages/home/Home';
-import ToolsPage from './pages/tools/Tools';
+import { HomePage, ToolsPage, ContributionPage } from './pages';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,13 +12,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/"  element={<Layout />}>
-          <Route index element={<Home />} />
-          {/* <Switch> */}
+          <Route index element={<HomePage />} />
             <Route path="tools" element={<ToolsPage />} />
-          {/* </Switch> */}
-          {/* <Route path="contact" element={<Contact />} /> */}
-          {/* <Route path="/" element={<Home />} /> */}
-          {/* <Route path="*" element={<Home />} /> */}
+            <Route path="contribution" element={<ContributionPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

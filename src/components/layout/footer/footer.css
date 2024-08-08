@@ -18,5 +18,10 @@
 }
 
 .footer {
-  padding: 2rem;
+  padding: 3rem;
+  background-image: url(../../../assets/FooterBackground1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* display: inline-table; */
 }

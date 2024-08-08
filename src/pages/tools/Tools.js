@@ -1,14 +1,10 @@
 import '../../index.css';
 import './tools-page.css';
-import React, { useState, useEffect } from 'react';
-import { Button, ButtonGroup, Flex, Heading, View } from '@adobe/react-spectrum';
-import { Navbar, Footer, Splash, Tools, Feature, Contribute, Apps } from "../../components";
-import { Provider, defaultTheme } from '@adobe/react-spectrum';
-import JsonData from "../../data/data.json";
+import React from 'react';
+import { Flex, Heading } from '@adobe/react-spectrum';
 import { SearchPage } from '../../components/layout/search/SearchPage';
 
-
-const ToolsPage = () => {
+export const ToolsPage = () => {
   return (
     <>
       <div className='tools-header'>
@@ -24,5 +20,3 @@ const ToolsPage = () => {
     </>
   );
 }
-
-export default ToolsPage;

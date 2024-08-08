@@ -22,7 +22,7 @@ export const Navbar = (props) => {
             <ul className="nav navbar-nav">
               <li><a href="/" className="page-scroll header-link">Home</a></li>
               <li><a href="/tools" className="page-scroll header-link">Tools</a></li>
-              <li><a href="#contribute" className="page-scroll header-link">Contribute</a></li>
+              <li><a href="/contribution" className="page-scroll header-link">Contribute</a></li>
             </ul>
           </div>
         </Flex>

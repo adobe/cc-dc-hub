@@ -19,7 +19,7 @@
  */
 // create a react component called InfoCard
 import React from "react";
-import styles from "./infoCard.module.css";
+import "./info-card.css";
 import FileSVG from "../../../assets/icons/FileSVG";
 import GearSVG from "../../../assets/icons/GearSVG";
 import ToolSVG from "../../../assets/icons/ToolSVG";
@@ -48,44 +48,44 @@ export const InfoCard = ({ cardData }) => {
   const productTypeMap = {
     Acrobat: (
       <img
-        className={styles.infoProductIcon}
+        className="infoProductIcon"
         src={AcrobatLogo}
         alt="Acrobat Logo"
       />
     ),
     Sign: (
-      <img className={styles.infoProductIcon} src={SignLogo} alt="Sign Logo" />
+      <img className="infoProductIcon" src={SignLogo} alt="Sign Logo" />
     ),
   };
 
   return (
-    <div className={styles.infoCard}>
-      <div className={styles.infoCardContainer}>
-        <div className={`${styles.infoCardItem} ${styles.infoCardTitle}`}>
-          <div className={styles.infoCardFeatureType}>
+    <div className="infoCard">
+      <div className="infoCardContainer">
+        <div className="infoCardItem infoCardTitle">
+          <div className="infoCardFeatureType">
             {imgMap[featureType]}
           </div>
           <h3>{title}</h3>
         </div>
-        <div className={`${styles.infoCardItem} ${styles.infoCardBody}`}>
-          <p className={styles.itemDesc}>{desc}</p>
+        <div className="infoCardItem infoCardBody">
+          <p className="itemDesc">{desc}</p>
         </div>
-        <div className={`${styles.infoCardItem} ${styles.infoCardFooter}`}>
-          <div className={styles.infoCardFooterItem}>
+        <div className="infoCardItem infoCardFooter">
+          <div className="infoCardFooterItem">
             {productType.map((item) => {
               return <div key={id + item}>{productTypeMap[item]}</div>;
             })}
             {adobeCertified ? (
               <div>
                 <img
-                  className={styles.infoProductIcon}
+                  className="infoProductIcon"
                   src={AdobeLogo}
                   alt="Adobe Certified"
                 />
               </div>
             ) : null}
           </div>
-          <div className={styles.infoCardFooterItem}>
+          <div className="infoCardFooterItem">
             <Button text="Learn More" color="blue" link={featureFileName} />
           </div>
         </div>
