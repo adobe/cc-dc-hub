@@ -31,7 +31,7 @@ export const Button = ({ text, color, link = null, externalLink = null }) => {
   // This is a button for links to the feature detail in the search page
   if (link !== null) {
     return (
-      <Link to={`/search/${fileName}`} state={{ fileName: fileName }}>
+      <Link to={`/tools/${fileName}`} state={{ fileName: fileName }}>
         <button className={`button ${color}`}>{text}</button>
       </Link>
     );

@@ -1,5 +1,5 @@
 // import { Flex, Link, View, Text } from "@adobe/react-spectrum";
-import './navbar.css'
+import './navbar.css';
 import React from "react";
 import { Flex } from '@adobe/react-spectrum';
 

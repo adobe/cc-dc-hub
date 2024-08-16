@@ -109,5 +109,20 @@
     ],
     "adobeCertified": false,
     "featureFileName": "SignBulkDownload"
+  },
+  {
+    "id": "AICrazytown",
+    "title": "AI Crazytown",
+    "desc": "Takes a prompt and randomly generates an asset in either image, 3D object, video, or ascii format.",
+    "creator": "Name (email)",
+    "featureType": "tool",
+    "contributors": "Name (email), name (email)",
+    "productType": [
+      "Sign"
+    ],
+    "adobeCertified": true,
+    "docs": null,
+    "repo": "https://github.com/fearn/ai-crazytown",
+    "featureFileName": "AICrazytown"   
   }
 ]

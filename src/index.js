@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import Layout from './Layout';
-import { HomePage, ToolsPage, ContributionPage } from './pages';
+import { HomePage, ToolsPage, ToolsDetailPage, ContributionPage } from './pages';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +14,7 @@ root.render(
         <Route path="/"  element={<Layout />}>
           <Route index element={<HomePage />} />
             <Route path="tools" element={<ToolsPage />} />
+            <Route path="tools/:id" element={<ToolsDetailPage />} />
             <Route path="contribution" element={<ContributionPage />} />
         </Route>
       </Routes>

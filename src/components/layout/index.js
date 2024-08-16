@@ -6,3 +6,5 @@ export * from './splash/Splash';
 export * from './feature/Feature';
 export * from './contribute/Contribute';
 export * from './contribution/Contribution';
+export * from './tool-detail-body/ToolDetailBody';
+export * from './tool-detail-header/ToolDetailHeader';
