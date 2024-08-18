@@ -2,12 +2,10 @@ import './tool-detail-page.css';
 import { useParams } from 'react-router';
 import React, { useEffect, useState } from 'react';
 import { ToolsDetailHeader, ToolsDetailBody } from '../../components/layout';
-import json from './mock.json'
 
 export const ToolsDetailPage = () => {
   const params = useParams()
   const [ selectedTool, setSelectedTool ] = useState();
-  const { properties, content } = json;
 
   useEffect(() => {
     (async () => {
@@ -29,7 +27,7 @@ export const ToolsDetailPage = () => {
             repoUrl={selectedTool.properties.repo || ''} 
             docUrlUrl={selectedTool.properties.docs || ''} 
           />
-          <ToolsDetailBody content={content} />
+          <ToolsDetailBody content={selectedTool.content} />
           <br /><br />
         </>}
     </>
