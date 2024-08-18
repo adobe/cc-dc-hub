@@ -41,7 +41,7 @@ export const SearchPage = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000${process.env.PUBLIC_URL}/data/pages/searchToolsCollection.json`
+          `/data/pages/searchToolsCollection.json`
         );
         const data = await response.json();
         const sortedData = [...data].sort((a, b) => {
