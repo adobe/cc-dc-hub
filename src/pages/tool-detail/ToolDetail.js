@@ -7,15 +7,14 @@ import json from './mock.json'
 export const ToolsDetailPage = () => {
   const params = useParams()
   const [ selectedTool, setSelectedTool ] = useState();
-  const { properties: { tagline, title, repo }, content } = json;
+  const { properties, content } = json;
 
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `http://localhost:3000${process.env.PUBLIC_URL}/data/pages/searchToolsCollection.json`
+        `/features/${params.id}/index.json`
       );
-      const toolsData = await response.json();
-      const tool = toolsData.find(e => e.id === params.id)
+      const tool = await response.json();
       setSelectedTool(tool);
     })();
   }, []);
@@ -25,10 +24,10 @@ export const ToolsDetailPage = () => {
       {selectedTool &&
         <>
           <ToolsDetailHeader 
-            title={selectedTool.title} 
-            description={selectedTool.tagline || selectedTool.desc} 
-            repoUrl={selectedTool.repo || ''} 
-            docUrlUrl={selectedTool.docs || ''} 
+            title={selectedTool.properties.title} 
+            description={selectedTool.properties.tagline || selectedTool.properties.desc} 
+            repoUrl={selectedTool.properties.repo || ''} 
+            docUrlUrl={selectedTool.properties.docs || ''} 
           />
           <ToolsDetailBody content={content} />
           <br /><br />

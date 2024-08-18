@@ -1,5 +1,5 @@
 import React from "react";
-import './splash.css';
+import './Splash.css';
 import { Button, ButtonGroup, Flex, Heading, View } from '@adobe/react-spectrum';
 
 export const Splash = () => {
