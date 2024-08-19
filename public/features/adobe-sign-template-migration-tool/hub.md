@@ -23,10 +23,6 @@ docs:
 products: 
   - Sign
 ---
-
-
-## Key Features
-
 ## Using Sign to Sign Template Migration Tool
 
 The template migration tool is a standalone application, ran from your desktop. Simply log into the source environment and destination environment, choose which templates you want to migrate, then migrate!
