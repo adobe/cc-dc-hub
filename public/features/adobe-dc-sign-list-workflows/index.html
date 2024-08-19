@@ -1,0 +1,20 @@
+<h2>Using Acrobat Sign List Workflows</h2>
+<p>Java-based command-line tool to list all the custom workflows in an Acrobat Sign account (in CSV format)</p>
+<p><img src="https://github.com/dc/sign-list-workflows/images/example-usage.png" alt="Example Usage"></p>
+<h2>Installing Acrobat Sign List Workflows</h2>
+<p><strong>Set-Up instructions:</strong></p>
+<ul>
+<li>Download Java 1.8, if you don&#39;t already have it installed on your machine</li>
+<li>Add IP addresses to your allow list, if needed</li>
+</ul>
+<p><em>As the tool makes use of the Acrobat Sign REST API, it is necessary to provide an integration key for your account</em></p>
+<h2>Usage</h2>
+<p>Execute the following command, replacing</p>
+<ul>
+<li>&lt;version&gt; with the appropriate value for the release, such as 3.0.0</li>
+<li>&lt;integrationKey&gt; with your integration key</li>
+<li>[--sandbox] optional flag if the integration key is for a Sandbox account</li>
+</ul>
+<pre><code class="language-bash">java -jar dc-sign-list-webforms-&amp;lt;version&amp;gt;.jar &amp;lt;integrationKey&amp;gt; [--sandbox]
+</code></pre>
+<p><a href="https://github.com/adobe/dc-sign-list-templates">Click Here To Go To Repo</a></p>

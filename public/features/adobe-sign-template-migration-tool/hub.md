@@ -27,8 +27,8 @@ products:
 
 The template migration tool is a standalone application, ran from your desktop. Simply log into the source environment and destination environment, choose which templates you want to migrate, then migrate!
 
-![Example Usage](./images/image1.png)
-![Example Usage](./images/image2.png)
+![Example Usage](https://github.com/adobe/sign-template-migration-tool/images/image1.png)
+![Example Usage](https://github.com/adobe/sign-template-migration-tool/images/image2.png)
 
 ## Installing Sign to Sign Template Migration Tool
 
