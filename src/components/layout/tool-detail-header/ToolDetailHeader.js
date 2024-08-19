@@ -3,7 +3,7 @@ import '../../../assets/ToolsHeaderImage.jpeg'
 import React from 'react';
 import { Flex, Heading, View, Image, Button } from '@adobe/react-spectrum';
 
-export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl = '' }) => {
+export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
   return (
     <div className='tool-detail-header'>
       <Flex justifyContent={"center"} alignItems={"center"} height={"100%"} paddingTop="150px">
@@ -16,7 +16,7 @@ export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl = '' }) 
           <br />
           <Flex wrap gap="size-250">
             <Button label="Repo" size="large" variant="accent" onPress={() => window.open(repoUrl, "_self")}>Repo</Button>
-            <Button label="Docs" size="large" variant="accent" onPress={() => window.open(docUrl, "_self")} style="outline">Docs</Button>
+            { docUrl &&  <Button label="Docs" size="large" variant="accent" onPress={() => window.open(docUrl, "_self")} style="outline">Docs</Button>}
           </Flex>
         </View>
         <View width="40%">

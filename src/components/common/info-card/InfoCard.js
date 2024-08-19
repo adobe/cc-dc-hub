@@ -36,7 +36,6 @@ export const InfoCard = ({ cardData }) => {
     featureType,
     productType,
     adobeCertified,
-    featureFileName,
   } = cardData;
 
   const imgMap = {
@@ -86,7 +85,7 @@ export const InfoCard = ({ cardData }) => {
             ) : null}
           </div>
           <div className="infoCardFooterItem">
-            <Button text="Learn More" color="blue" link={featureFileName} />
+            <Button text="Learn More" color="blue" link={id} />
           </div>
         </div>
       </div>
