@@ -1,0 +1,66 @@
+name: Hub File Conversion
+run-name: Create index.html file for feature
+on:
+  push:
+    branches:
+      - main
+    paths: 
+      - 'public/features/**/hub.md'
+  pull_request: 
+    branches:
+      - main
+    paths: 
+      - 'public/features/**/hub.md'
+jobs:
+  convert_hub_file:
+    runs-on: ubuntu-latest
+    name: Convert Hub File
+    steps:
+      - run: echo "${{ github.event_name }} event detected."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with: 
+          fetch-depth: '2'
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with: 
+          node-version: '18'
+      - name: Install
+        run: npm ci
+      - id: file_chnages
+        uses: trilom/file-changes-action@v1.2.3
+        with:
+          output: 'json'
+          fileOutput: 'json'
+      - name: Show files changed
+        run: cat $HOME/files.json
+      - name: "Absolutify Links"
+        id: linking
+        run: |
+          node ./scripts/pipeline.js \
+            --phase link
+      - name: "Create tracking file"
+        id: tracking
+        run: echo "[]" > $HOME/tracker.json
+      - name: "Transform files"
+        id: html-transform
+        run: |
+          node ./scripts/pipeline.js \
+            --phase transform 
+      - name: "Show tracked entries"
+        run: cat $HOME/tracker.json
+      - name: Update search tools collection
+        id: search
+        run: |
+          node ./scripts/pipeline.js \
+            --phase searchupdate \
+            --searchFile $(pwd)/public/data/pages/searchToolsCollection.json
+      - name: "Show all"
+        run: "ls -R public/features/"
+      - name: "Commit changes"
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add public/features/ public/data/pages/searchToolsCollection.json
+          git commit -m "Convert hub.md and update search"
+          git push
