@@ -39,7 +39,3 @@ The template migration tool is a standalone application, ran from your desktop. 
 The migration tool is an Angular app that just needs downloaded and built.
 
 <a href="https://github.com/adobe/acrobat-sign-template-migration-tool">Click Here To Go To Repo</a>
-
-## Have Questions? 
-
-**Contact Your Customer Success Manager For More Information!**

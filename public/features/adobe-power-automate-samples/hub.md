@@ -44,7 +44,3 @@ Power Automate is a powerful tool that can streamline your Adobe Acrobat Sign wo
 Install each flow in Power Automate by selecting "Import -> Import Package (legacy)" in the Power Automate UI and uploading the packages from this repo. Power Automate will guide you through the connections needed.
 
 [Click Here To Go To Repo](https://github.com/adobe/acrobat-sign-template-migration-tool)
-
-## Have Questions? 
-
-**Contact Your Customer Success Manager For More Information!**

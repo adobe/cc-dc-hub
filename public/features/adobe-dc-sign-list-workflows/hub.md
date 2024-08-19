@@ -60,7 +60,3 @@ Execute the following command, replacing
 java -jar dc-sign-list-webforms-&lt;version&gt;.jar &lt;integrationKey&gt; [--sandbox]
 ```
 <a href="https://github.com/adobe/dc-sign-list-templates">Click Here To Go To Repo</a>
-
-## Have Questions? 
-
-**Contact Your Customer Success Manager For More Information!**
