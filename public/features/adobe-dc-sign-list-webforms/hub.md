@@ -26,15 +26,6 @@ products:
 
 ## Key Features
 
-### List All Templates
-Keep track of all the templates that exist throughout your Acrobat Sign account
-
-### Supports Sandbox Account
-Use the optional --sandbox switch to use with Sandbox account
-
-### Concise Output Format
-Output is intentionally concise to easily support directing to a CSV file for further analysis
-
 ## Using Acrobat Sign List Webforms
 
 Java-based command-line tool to list all the webforms in an Acrobat Sign account (in CSV format)
