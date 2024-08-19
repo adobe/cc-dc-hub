@@ -1,0 +1,48 @@
+{
+    "title": "Sign to Sign Template Migration Tool",
+    "tagLine": "Migrate Templates from One Adobe Acrobat Sign Account to Another With Ease",
+    "version": "1.0",
+    "creator": "Ross GroganKaylor and Todd Guerra",
+    "keyFeature": [
+        {
+            "title": "Commercial to Gov",
+            "desc": "Migrate templates from commercial Sign accounts to FedRAMP Moderate Sign for Gov"
+        },
+        {
+            "title": "Commercial to Commercial",
+            "desc": "Migrate templates cross-shard, from one account to another"
+        },
+        {
+            "title": "Development to Production",
+            "desc": "Migrate from your development environment to your production Adobe Acrobat Sign account"
+        }
+    ],
+    "content": [
+        {
+            "type": "text",
+            "content": "The template migration tool is a standalone application, ran from your desktop. Simply log into the source environment and destination environment, choose which templates you want to migrate, then migrate!"
+        },
+        {
+            "type": "image",
+            "content": "image1.png"
+        },
+        {
+            "type": "text",
+            "content": "Monitor progress in the log as it runs. "
+        },
+        {
+            "type": "image",
+            "content": "image2.png"
+        }
+    ],
+    "installation": [
+        {
+            "type": "text",
+            "content": "The migration tool is an Angular app that just needs downloaded and built."
+        },
+        {
+            "type": "link",
+            "content": "https://github.com/adobe/acrobat-sign-template-migration-tool"
+        }
+    ]
+}
