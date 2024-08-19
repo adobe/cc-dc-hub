@@ -2,6 +2,7 @@
   "name": "acs-dc-community",
   "version": "0.1.0",
   "private": true,
+  "license": "Apache-2.0",
   "dependencies": {
     "@adobe/react-spectrum": "^3.36.0",
     "@react-spectrum/button": "^3.16.5",
