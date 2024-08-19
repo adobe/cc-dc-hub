@@ -1,15 +1,5 @@
 [
   {
-    "id": "fearn-ai-crazytown",
-    "title": "AI Crazytown",
-    "tagline": "Takes a prompt and randomly generates an asset in either image, 3D object, video, or ascii format.",
-    "creator": "Name (email)",
-    "contributors": "Name (email), name (email)",
-    "desc": "Takes a prompt and randomly generates an asset in either image, 3D object, video, or ascii format.",
-    "productType": ["Sign", "Acrobat"],
-    "path": "public/features/fearn-ai-crazytown/index.json"
-  },
-  {
     "id": "adobe-dc-sign-list-templates",
     "title": "Adobe Sign List Templates",
     "tagline": "Obtain a list of all the templates in your Acrobat Sign account",
