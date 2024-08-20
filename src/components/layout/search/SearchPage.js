@@ -41,7 +41,7 @@ export const SearchPage = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/data/pages/searchToolsCollection.json`
+          `${process.env.PUBLIC_URL}/data/pages/searchToolsCollection.json`
         );
         const data = await response.json();
         const sortedData = [...data].sort((a, b) => {
@@ -164,8 +164,8 @@ export const SearchPage = () => {
   return (
     <div className="pageBackgroundContainer">
       {/*********************************************************************
-        *                     SEARCH BAR SECTION
-        ********************************************************************/}
+       *                     SEARCH BAR SECTION
+       ********************************************************************/}
       <div className="container containerBg">
         <div className="content contentUpdate">
           <div className="searchFilterContainer">
@@ -188,11 +188,13 @@ export const SearchPage = () => {
           <h2>Results Found: {numberOfResults}</h2>
 
           {/*********************************************************************
-            *                     FILTER DROPDOWN SECTION
-            ********************************************************************/}
+           *                     FILTER DROPDOWN SECTION
+           ********************************************************************/}
           <div
             className={
-              toggleFilter ? "filterDropdownContainer" : "filterDropdownContainerHidden"
+              toggleFilter
+                ? "filterDropdownContainer"
+                : "filterDropdownContainerHidden"
             }
           >
             <div className="searchCheckbox">
@@ -220,8 +222,8 @@ export const SearchPage = () => {
           </div>
 
           {/*********************************************************************
-            *                     RESULT CARD SECTION
-            ********************************************************************/}
+           *                     RESULT CARD SECTION
+           ********************************************************************/}
           <div className="cardContainer">
             {resultOutput.length === 0 ? (
               <div>

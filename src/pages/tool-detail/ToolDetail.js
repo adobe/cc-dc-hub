@@ -1,16 +1,16 @@
-import './tool-detail-page.css';
-import { useParams } from 'react-router';
-import React, { useEffect, useState } from 'react';
-import { ToolsDetailHeader, ToolsDetailBody } from '../../components/layout';
+import "./tool-detail-page.css";
+import { useParams } from "react-router";
+import React, { useEffect, useState } from "react";
+import { ToolsDetailHeader, ToolsDetailBody } from "../../components/layout";
 
 export const ToolsDetailPage = () => {
-  const params = useParams()
-  const [ selectedTool, setSelectedTool ] = useState();
+  const params = useParams();
+  const [selectedTool, setSelectedTool] = useState();
 
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `/features/${params.id}/index.json`
+        `${process.env.PUBLIC_URL}/features/${params.id}/index.json`
       );
       const tool = await response.json();
       setSelectedTool(tool);
@@ -19,17 +19,21 @@ export const ToolsDetailPage = () => {
 
   return (
     <>
-      {selectedTool &&
+      {selectedTool && (
         <>
-          <ToolsDetailHeader 
-            title={selectedTool.properties.title} 
-            description={selectedTool.properties.tagline || selectedTool.properties.desc} 
-            repoUrl={selectedTool.properties.repo || ''} 
-            docUrlUrl={selectedTool.properties.docs || ''} 
+          <ToolsDetailHeader
+            title={selectedTool.properties.title}
+            description={
+              selectedTool.properties.tagline || selectedTool.properties.desc
+            }
+            repoUrl={selectedTool.properties.repo || ""}
+            docUrlUrl={selectedTool.properties.docs || ""}
           />
           <ToolsDetailBody content={selectedTool.content} />
-          <br /><br />
-        </>}
+          <br />
+          <br />
+        </>
+      )}
     </>
   );
-}
+};
