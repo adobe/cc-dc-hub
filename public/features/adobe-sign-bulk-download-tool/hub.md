@@ -9,18 +9,19 @@ keyFeature:
   - 
     title: Bulk Operations
     icon: 
-    desc: Delete: Seamlessly remove documents associated with agreements in bulk. Download: Easily retrieve agreements and their associated form fields in bulk. Hide: Quickly conceal all agreements for enhanced organization and management. Cancel Agreements: Cancel In-Progress agreements in bulk. Cancel reminders: Cancel reminders in bulk.
+    desc: "Delete: Seamlessly remove documents associated with agreements in bulk. Download: Easily retrieve agreements and their associated form fields in bulk. Hide: Quickly conceal all agreements for enhanced organization and management. Cancel Agreements: Cancel In-Progress agreements in bulk. Cancel reminders: Cancel reminders in bulk."
   - 
     title: Advanced filtering
     icon: 
-    desc: Date Range Filtering: Fetch agreements based on specific date ranges, allowing for targeted retrieval of desired records. Acrobat Sign Group: Fetch agreements based on specific groups, allowing for targeted retrieval of desired records. Agreement Status Filtering: Filter agreements based on their status, enabling quick access to agreements in specific states (e.g., completed, pending). Role-Based Fetching: Fetch agreements based on assigned roles, simplifying the process of retrieving agreements associated with specific users or groups.
+    desc: "Date Range Filtering: Fetch agreements based on specific date ranges, allowing for targeted retrieval of desired records. Acrobat Sign Group: Fetch agreements based on specific groups, allowing for targeted retrieval of desired records. Agreement Status Filtering: Filter agreements based on their status, enabling quick access to agreements in specific states (e.g., completed, pending). Role-Based Fetching: Fetch agreements based on assigned roles, simplifying the process of retrieving agreements associated with specific users or groups."
   - 
     title: Workflow Agreement Fetch
     icon: 
-    desc: Streamlined Retrieval: Effortlessly fetch agreements associated with workflows directly from the application, ensuring easy access to relevant records.
+    desc: "Streamlined Retrieval: Effortlessly fetch agreements associated with workflows directly from the application, ensuring easy access to relevant records."
 docs: ""
 products: 
   - Sign
+classification: private
 ---
 
 ## Using Sign Bulk Download Tool
