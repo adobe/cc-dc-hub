@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Community Source Hub: Open Source Contribution Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Community Source Hub**! This project is designed to create a centralized platform for both internal and external users to contribute their repositories, showcasing innovative tools, integrations, samples, and more that they've built using Adobe products. Our goal is to foster a community of collaboration and innovation, allowing users to share and discover cutting-edge solutions. 
 
-## Available Scripts
+## 🌟 Key Features 
+- **Home Page:** 
+	- **Highlight New Products & APIs:** The home page serves as the main showcase, featuring the latest and most innovative tools, APIs, and integrations that have been recently contributed by the community or released by Adobe. 
+- **Tools Page:** 
+	- **Search Functionality:** The tools page provides a powerful search feature, enabling users to easily find tools, integrations, samples, videos, and other resources based on specific Adobe products. 
+- **Contribution Page:** 
+	- **Step-by-Step Contribution Guide:** The contribution page guides users through the process of contributing their projects, ensuring a seamless and straightforward experience for all contributors. 
 
-In the project directory, you can run:
+## 🎯 Project Goals 
+1. **Centralized Collaboration:** 
+	- This platform aims to become the go-to hub for sharing and discovering open-source projects related to Adobe products, fostering a collaborative environment among developers and users. 
+2. **Encourage Innovation:** 
+	- By highlighting and sharing innovative solutions, this project aims to inspire the community to continue pushing the boundaries of what can be achieved with Adobe Products. 
+3. **Streamlined Contributions:** 
+	- The contribution process is designed to be as easy and accessible as possible, encouraging a wide range of users to share their work and contribute to the community. 
 
-### `npm start`
+## 🚀 Getting Started 
+To start contributing or exploring the resources available on the site, simply visit the following pages: 
+- **Home Page:** https://opensource.adobe.com/cc-dc-hub/
+- **Tools Page:** https://opensource.adobe.com/cc-dc-hub/#/tools
+- **Contribution Page:** https://opensource.adobe.com/cc-dc-hub/#/contribution 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We welcome contributions from everyone, whether you're an internal team member or an external user. Together, let's build something amazing! 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📄 License 
+This project is licensed under the Apache 2.0 License- see the [LICENSE](https://github.com/adobe/cc-dc-hub?tab=Apache-2.0-1-ov-file#readme) file for details. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+--- 
+Thank you for being a part of our journey to foster innovation and excellence within the Adobe community.
