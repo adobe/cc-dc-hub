@@ -24,17 +24,6 @@ products:
   - Acrobat
 ---
 
-## Key Features
-
-### Send Custom Emails
-Instead of using the standard Adobe Acrobat Sign emails, send your own custom emails for signing steps
-
-### Automatically Send from Sharepoint
-Upload a file, automatically send it for signature
-
-### Mimic Web Forms for More Flexibility
-Call your flow, get back the signing URL, then redirect your signer to the agreement
-
 ## Using Microsoft Power Automate Samples
 Power Automate is a powerful tool that can streamline your Adobe Acrobat Sign workflows. This set of flows will get you started, with basic flows to use as building blocks.
 
