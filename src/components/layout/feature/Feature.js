@@ -1,20 +1,26 @@
 import React from "react";
-import './feature.css';
-import { Heading } from '@adobe/react-spectrum';
+import "./feature.css";
+import "../../../index.css";
+import { Heading, Flex, View, Content } from "@adobe/react-spectrum";
 
-export const Feature = (props) => {
+export const Feature = () => {
   return (
-    <header id="features" >
-      <div className="feature-intro">
-        <div className="intro-text">
-          <Heading level={1}>
-            <span className="feature-text">
-              Unleash Our Versatile <span className="splash-header">API</span> Anywhere, <br/>
-              Anytime!
-            </span>
-          </Heading>
-        </div>
-      </div>
-    </header>
-  )
-}
+    <View id="features">
+      <View id="ResponsiveContainer">
+        <Flex height="100%" justifyContent="center" alignItems="center">
+          <Content className="intro-text">
+            <Heading level={1}>
+              <span className="feature-text">
+                Unleash Our Versatile{" "}
+                <span className="splash-header">
+                  <b>API</b>
+                </span>{" "}
+                Anywhere, Anytime!
+              </span>
+            </Heading>
+          </Content>
+        </Flex>
+      </View>
+    </View>
+  );
+};

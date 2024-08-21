@@ -2,18 +2,32 @@
   color: #ffc107;
 }
 
-/* Header Section */
-.intro {
-  width: 100%;
-  padding: 0;
-  height: 100vh;
-  margin-top: 81px;
-  text-align: center;
+#splash-section {
   background-size: cover;
+  background: url("../../../assets/Header1.jpeg") center center no-repeat;
   -o-background-size: cover;
   -moz-background-size: cover;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
-  background: url("../../../assets/Header.jpg") center center no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+#intro {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#intro h1 {
+  font-size: 60px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#intro h3 {
+  font-size: 30px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }

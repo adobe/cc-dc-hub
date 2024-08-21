@@ -1,14 +1,16 @@
-.apps {
+#apps {
   padding: 1.2rem;
-  /* background-color: #edebef;  */
+  background-color: rgba(237, 235, 239, 0.6);
+  width: 100%;
 }
 
 .app-img {
   height: 75px;
+  transition: transform 0.75s ease-in-out;
 }
 
-.apps .app-img:hover {
+#apps .app-img:hover {
   cursor: pointer;
-  transform: scale(1.5, 1.5);
-  transition: transform 1s;
+  transform: scale(1.2, 1.2);
+  transition: transform 0.75s ease-in-out;
 }

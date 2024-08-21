@@ -1,28 +1,34 @@
 import React from "react";
-import './contribute.css';
-import { Button, Flex, Heading, View } from '@adobe/react-spectrum';
-// ButtonGroup from @adobe/react-spectrum
+import "./contribute.css";
+import { Button, Flex, Heading, View } from "@adobe/react-spectrum";
 
-export const Contribute = (props) => {
+export const Contribute = () => {
   return (
-    <header id="contribute">
-      <div className="contribute u-d-flex u-justify-content-center u-align-items-center">
-        {/* <div className="contributeIntro">
-          <div className="col-md-8 col-md-offset-2 intro-text">
-            <h1>Like to Contribute? We'd Love to Hear From You! <span></span></h1>
-            <a href="" className="btn btn-custom btn-lg page-scroll">Button</a>
-          </div>
-        </div> */}
-        {/* gap="size-3400" */}
-        <Flex direction="column" alignItems="center" >
-          <View />
-          <View>
-            <Heading level={1} alignSelf="center" marginBottom="size-400">Like to <span className="splash-header">Contribute?</span> We'd Love to Hear From You!</Heading>
-            <Button align="center" variant="accent" height={"60px"} width={"150px"}>Rate Now</Button>
-          </View>
-          <View />
+    <View id="contribute">
+      <View id="ResponsiveContainer">
+        <Flex
+          height="100%"
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Heading level={1} alignSelf="center" marginBottom="size-400">
+            Like to{" "}
+            <span className="splash-header">
+              <b>Contribute?</b>
+            </span>{" "}
+            We'd Love to Hear From You!
+          </Heading>
+          <Button
+            align="center"
+            variant="accent"
+            height={"60px"}
+            width={"150px"}
+          >
+            Rate Now
+          </Button>
         </Flex>
-      </div>
-    </header>
-  )
-}
+      </View>
+    </View>
+  );
+};

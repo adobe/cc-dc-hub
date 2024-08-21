@@ -1,23 +1,15 @@
 /* Features Section */
-.feature-intro {
-  /* min-height: 100vh; */
-  padding: 3rem;
+#features {
+  height: 30vh;
   text-align: center;
-  background-color: #e5e5e5;
-  background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: center;
-  background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
-  background-image: url("../../../assets/BackProfile.jpg");
 }
 
-.feature-intro .feature-text {
+#features .feature-text {
   color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.no-text {
-  padding-top: 1000px;
-  padding-bottom: 500px;
+#features h1 {
+  font-size: 60px;
+  font-weight: bold;
 }

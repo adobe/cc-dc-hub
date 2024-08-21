@@ -1,19 +1,26 @@
 .tool-link {
   color: black;
   font-weight: bold;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   text-decoration: none !important;
 }
 
-.image-container {
-  margin-top: .625rem;
+#image-container {
+  margin-top: 0.625rem;
 }
 
-.image-container img {
+#image-container img {
   border-radius: 50%;
 }
 
 .tool {
   width: unset;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tool span {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }

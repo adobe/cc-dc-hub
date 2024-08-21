@@ -201,17 +201,17 @@ export const SearchPage = () => {
               <h2>Filter By: </h2>
             </div>
             <div className="searchCheckbox">
-              <img src={SignLogo}></img>
+              <img src={SignLogo} alt="SignLogo"></img>
               <h2>Sign</h2>
               <input type="checkbox" value="Sign" onClick={handleCheckbox} />
             </div>
             <div className="searchCheckbox">
-              <img src={AcrobatLogo}></img>
+              <img src={AcrobatLogo} alt="AcrobatLogo"></img>
               <h2>Acrobat</h2>
               <input type="checkbox" value="Acrobat" onClick={handleCheckbox} />
             </div>
             <div className="searchCheckbox">
-              <img src={AdobeLogo}></img>
+              <img src={AdobeLogo} alt="AdobeLogo"></img>
               <h2>Certified</h2>
               <input
                 type="checkbox"

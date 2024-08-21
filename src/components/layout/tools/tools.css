@@ -1,8 +1,16 @@
 #tools.tools {
-  /* min-height: 100vh; */
   height: fit-content;
 }
 
 .tools h1 {
   text-align: center;
+}
+
+#tools {
+  width: 100%;
+}
+
+#tools-section {
+  width: 100%;
+  background-color: #ebebeb;
 }

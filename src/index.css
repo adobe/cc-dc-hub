@@ -1,13 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html,
+body {
   font-size: 16px;
 }
 
@@ -16,7 +17,7 @@ html, body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -26,23 +27,56 @@ code {
 }
 
 .u-text-white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Flex box */
-.u-d-flex { display: flex; }
-.u-justify-content-center { justify-content: center; }
-.u-justify-content-between { justify-content: space-between; }
-.u-justify-content-around { justify-content: space-around; }
-.u-justify-content-evenly { justify-content: space-evenly; }
-.u-justify-content-evenly { justify-content: flex-end; }
-.u-align-items-center { align-items: center; }
-
+.u-d-flex {
+  display: flex;
+}
+.u-justify-content-center {
+  justify-content: center;
+}
+.u-justify-content-between {
+  justify-content: space-between;
+}
+.u-justify-content-around {
+  justify-content: space-around;
+}
+.u-justify-content-evenly {
+  justify-content: space-evenly;
+}
+.u-justify-content-evenly {
+  justify-content: flex-end;
+}
+.u-align-items-center {
+  align-items: center;
+}
 
 /* Height */
-.u-height-full { height: 100%; }
+.u-height-full {
+  height: 100%;
+}
 
 /* Shadow */
 .u-default-shadow {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#ResponsiveContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10vw 0px 10vw;
+  height: 100%;
+  width: 100%;
+}
+
+#background-overlay {
+  background: url("assets/ContrinuteSectionBackground.jpeg") center center
+    no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
