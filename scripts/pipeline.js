@@ -19,6 +19,8 @@ console.log(flags.files);
 console.log(flags.json);
 
 let files = flags.files ? flags.files.split(',') : utils.getFilesList('files.json');
+files = files.filter(file => path.basename(file) === 'hub.md');
+
 const searchFile = flags.searchFile || `../public/data/pages/searchToolsCollection.json`;;
 const searchPath = path.resolve(__dirname, searchFile);
 
