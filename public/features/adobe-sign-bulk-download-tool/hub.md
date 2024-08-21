@@ -48,7 +48,7 @@ Webform-Associated Agreements Retrieval:
 Delete Operation
 The delete operation is available to delete the documents associated with agreements. To enable the delete operation, please raise the support ticket and sign the retention policy with enable `agreement_retention` flag.
 
-![Scope Image](./images/image1.png)
+![Scope Image](https://github.com/adobe/sign-bulk-download-tool/images/image1.png)
 
 # Installing Sign Bulk Download Tool
 
