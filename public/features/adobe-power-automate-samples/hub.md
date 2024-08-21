@@ -22,6 +22,7 @@ docs: ""
 products: 
   - Sign
   - Acrobat
+classification: private
 ---
 
 ## Using Microsoft Power Automate Samples

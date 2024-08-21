@@ -10,6 +10,7 @@ keyFeature:
 docs: ""
 products: 
   - Sign
+classification: private
 ---
 
 ## Using Redlining Solution
