@@ -12,5 +12,6 @@
 
 #tools-section {
   width: 100%;
-  background-color: #ebebeb;
+  background-image: radial-gradient(#d3d3d3 1px, rgb(241, 241, 241) 1px);
+  background-size: 20px 20px;
 }
