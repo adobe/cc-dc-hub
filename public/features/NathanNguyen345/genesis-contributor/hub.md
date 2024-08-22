@@ -28,4 +28,4 @@ classification: private
 
 Your stuff goes here. 
 
-![](./images/your-image.png)
+![](https://github.com/NathanNguyen345/genesis/contributor/images/your-image.png)
