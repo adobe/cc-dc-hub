@@ -55,8 +55,6 @@ jobs:
           node ./scripts/pipeline.js \
             --phase searchupdate \
             --searchFile $(pwd)/public/data/pages/searchToolsCollection.json
-      - name: "Show all"
-        run: "ls -R public/features/"
       - name: "Commit changes"
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
