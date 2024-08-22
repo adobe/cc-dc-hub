@@ -13,9 +13,11 @@ products:
 classification: private
 ---
 ## Using Redlining Solution
+
 Navigate to [https://make.powerautomate.com/solutions](https://make.powerautomate.com/solutions) and select `Import Solution`
 
 ![Step 1](https://github.com/adobe/redlining-solution/image1.png)
+
 ![Step 2](https://github.com/adobe/redlining-solution/image2.png)
 
 Select the DocumentRedlining zip file
@@ -28,6 +30,7 @@ Select each connection required. If there you don't have a configured connection
 If you don't have PDF Services API setup navigate to [https://www.adobe.com/go/powerautomate_getstarted](https://www.adobe.com/go/powerautomate_getstarted) to create the required DC API credentials for the Document Generation step.
 
 ![Step 4](https://github.com/adobe/redlining-solution/image4.png)
+
 ![Step 5](https://github.com/adobe/redlining-solution/image5.png)
 
 
