@@ -22,10 +22,6 @@ docs:
 products: 
   - Sign
 ---
-
-
-## Key Features
-
 ## Using Acrobat Sign List Webforms
 
 Java-based command-line tool to list all the webforms in an Acrobat Sign account (in CSV format)
