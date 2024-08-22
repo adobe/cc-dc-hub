@@ -55,20 +55,18 @@ jobs:
           node ./scripts/pipeline.js \
             --phase searchupdate \
             --searchFile $(pwd)/public/data/pages/searchToolsCollection.json
-      - name: "Commit changes"
+      - name: Commit changes and deploy
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add public/features/ public/data/pages/searchToolsCollection.json
           git commit -m "Convert hub.md and update search"
           git push
-      - name: Merge main into gh-pages
-        run: |
+          git status
           git config pull.rebase true
           git fetch origin
           git checkout gh-pages
           git pull origin main --no-edit --allow-unrelated-histories
-          git push origin gh-pages
       - name: Install Dependencies
         run: npm ci
       - name: Deploy to GH Pages
