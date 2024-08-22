@@ -26,6 +26,6 @@ classification: private
 
 ## Your Content
 
-Your stuff goes here. 
+Let's see if we can fix this ID problem.
 
 ![](https://github.com/NathanNguyen345/genesis/contributor/images/your-image.png)
