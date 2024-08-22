@@ -1,0 +1,40 @@
+{
+    "title": "Microsoft Power Automate Samples",
+    "tagLine": "Example Flows for Common Adobe Acrobat Sign Use Cases",
+    "version": "1.0",
+    "creator": "Todd Guerra",
+    "keyFeature": [
+        {
+            "title": "Send Custom Emails",
+            "desc": "Instead of using the standard Adobe Acrobat Sign emails, send your own custom emails for signing steps"
+        },
+        {
+            "title": "Automatically Send from Sharepoint",
+            "desc": "Upload a file, automatically send it for signature"
+        },
+        {
+            "title": "Mimic Web Forms for More Flexibility",
+            "desc": "Call your flow, get back the signing URL, then redirect your signer to the agreement"
+        }
+    ],
+    "content": [
+        {
+            "type": "text",
+            "content": "Power Automate is a powerful tool that can streamline your Adobe Acrobat Sign workflows. This set of flows will get your started, with basic flows to use as building blocks."
+        },
+        {
+            "type": "image",
+            "content": "image1.png"
+        }
+    ],
+    "installation": [
+        {
+            "type": "text",
+            "content": "Install each flow in Power Automate by selecting \"Import->Import Package (legacy)\" in the Power Automate UI and uploading the packages from this repo. Power Automate will guide you through the connections needed."
+        },
+        {
+            "type": "link",
+            "content": "https://github.com/adobe/acrobat-sign-template-migration-tool"
+        }
+    ]
+}
