@@ -31,6 +31,6 @@ Customers now have the ability to revisualize and rebuild their emails in ways t
 
 ## Installing CEMT Boilerplate
 
-If you would like to learn more about CEMT Boilerplate, please visit the Github Repo for more information.
+Please visit the Github Repo for more information.
 
 [Click Here To Go To Repo](https://github.com/adobe/sign-cemt-boilerplate)
