@@ -27,7 +27,7 @@ export const ToolsDetailPage = () => {
       }
 
     })();
-  }, []);
+  }, [params.id]);
 
   return (
     <>
