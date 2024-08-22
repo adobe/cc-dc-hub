@@ -1,4 +1,14 @@
-.tools-header {
+#tools-header {
   height: 40vh;
   background-color: #ff0000;
+}
+
+#tools-header h1 {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 60px;
+}
+
+#tools-header h3 {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 30px;
 }

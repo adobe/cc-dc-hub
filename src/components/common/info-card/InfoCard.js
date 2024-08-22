@@ -15,81 +15,77 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Adobe.
 
- *************************************************************************
- */
-// create a react component called InfoCard
+ **************************************************************************/
 import React from "react";
 import "./info-card.css";
-import FileSVG from "../../../assets/icons/FileSVG";
-import GearSVG from "../../../assets/icons/GearSVG";
-import ToolSVG from "../../../assets/icons/ToolSVG";
 import AdobeLogo from "../../../assets/icons/AdobeLogo.png";
 import AcrobatLogo from "../../../assets/icons/AcrobatLogo.png";
 import SignLogo from "../../../assets/icons/SignLogo.png";
 import { Button } from "../button/Button";
+import {
+  View,
+  Content,
+  Heading,
+  Text,
+  Image,
+  Flex,
+} from "@adobe/react-spectrum";
 
 export const InfoCard = ({ cardData }) => {
-  const {
-    id,
-    title,
-    desc,
-    featureType,
-    productType,
-    adobeCertified,
-  } = cardData;
-
-  const imgMap = {
-    sample: <FileSVG />,
-    integration: <GearSVG />,
-    tool: <ToolSVG />,
-  };
+  const { id, title, desc, productType, adobeCertified } = cardData;
 
   const productTypeMap = {
     Acrobat: (
-      <img
-        className="infoProductIcon"
-        src={AcrobatLogo}
-        alt="Acrobat Logo"
-      />
+      <Image id="info-product-icon" src={AcrobatLogo} alt="Acrobat Logo" />
     ),
-    Sign: (
-      <img className="infoProductIcon" src={SignLogo} alt="Sign Logo" />
-    ),
+    Sign: <Image id="info-product-icon" src={SignLogo} alt="Sign Logo" />,
   };
 
   return (
-    <div className="infoCard">
-      <div className="infoCardContainer">
-        <div className="infoCardItem infoCardTitle">
-          <div className="infoCardFeatureType">
-            {imgMap[featureType]}
-          </div>
-          <h3>{title}</h3>
-        </div>
-        <div className="infoCardItem infoCardBody">
-          <p className="itemDesc">{desc}</p>
-        </div>
-        <div className="infoCardItem infoCardFooter">
-          <div className="infoCardFooterItem">
-            {productType.map((item) => {
-              return <div key={id + item}>{productTypeMap[item]}</div>;
-            })}
-            {adobeCertified ? (
-              <div>
-                <img
-                  className="infoProductIcon"
-                  src={AdobeLogo}
-                  alt="Adobe Certified"
-                />
-              </div>
-            ) : null}
-          </div>
-          <div className="infoCardFooterItem">
-            <Button text="Learn More" color="blue" link={id} />
-          </div>
-        </div>
-      </div>
-    </div>
+    <View id="info-card">
+      <Flex>
+        <View id="info-card-container">
+          <View id="info-card-item">
+            <Content id="info-card-title">
+              <Heading level={3}>{title}</Heading>
+            </Content>
+          </View>
+          <View id="info-card-item">
+            <Content id="info-card-body">
+              <Flex height="70%" alignSelf="flex-start">
+                <Text id="item-desc">{desc}</Text>
+              </Flex>
+            </Content>
+          </View>
+          <View id="info-card-item">
+            <View id="info-card-footer" width="100%">
+              <Flex
+                width="100%"
+                justifyContent="space-between"
+                alignItems="center"
+              >
+                <Content id="info-card-footer-item">
+                  {productType.map((item) => {
+                    return <View key={id + item}>{productTypeMap[item]}</View>;
+                  })}
+                  {adobeCertified ? (
+                    <View>
+                      <Image
+                        className="infoProductIcon"
+                        src={AdobeLogo}
+                        alt="Adobe Certified"
+                      />
+                    </View>
+                  ) : null}
+                </Content>
+                <Content id="info-card-footer-item">
+                  <Button text="Learn More" color="blue" link={id} />
+                </Content>
+              </Flex>
+            </View>
+          </View>
+        </View>
+      </Flex>
+    </View>
   );
 };
-
