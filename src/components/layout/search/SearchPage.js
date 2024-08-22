@@ -24,6 +24,15 @@ import AdobeLogo from "../../../assets/icons/AdobeLogo.png";
 import AcrobatLogo from "../../../assets/icons/AcrobatLogo.png";
 import SignLogo from "../../../assets/icons/SignLogo.png";
 import FilterSVG from "../../../assets/icons/FilterSVG";
+import { Footer } from "../../../components/layout/footer/Footer";
+import {
+  SearchField,
+  View,
+  Heading,
+  Image,
+  Checkbox,
+  Content,
+} from "@adobe/react-spectrum";
 
 export const SearchPage = () => {
   const [fetchSearchData, setFetchSearchData] = useState([]);
@@ -62,7 +71,7 @@ export const SearchPage = () => {
   }, []);
 
   const handleInputChange = (e) => {
-    setSearchQuery(e.target.value);
+    setSearchQuery(e);
   };
 
   // Filter and update the list of searchable features
@@ -110,45 +119,24 @@ export const SearchPage = () => {
   };
 
   // Handles the checkbox filter
-  const handleCheckbox = (e) => {
-    const checkboxValue = e.target.value;
-
+  const handleCheckbox = (isChecked, value) => {
     const filterMap = {
       Sign: (item) => item.productType.includes("Sign"),
       Acrobat: (item) => item.productType.includes("Acrobat"),
       Certified: (item) => item.adobeCertified === true,
     };
 
-    if (e.target.checked) {
-      const filteredData = fetchSearchData.filter(filterMap[checkboxValue]);
-      switch (checkboxValue) {
-        case "Sign":
-          setSignFilterResult(filteredData);
-          break;
-        case "Acrobat":
-          setAcrobatFilterResult(filteredData);
-          break;
-        case "Certified":
-          setCertifiedFilterResult(filteredData);
-          break;
-        default:
-          break;
-      }
-    } else {
-      switch (checkboxValue) {
-        case "Sign":
-          setSignFilterResult(fetchSearchData);
-          break;
-        case "Acrobat":
-          setAcrobatFilterResult(fetchSearchData);
-          break;
-        case "Certified":
-          setCertifiedFilterResult(fetchSearchData);
-          break;
-        default:
-          break;
-      }
-    }
+    const setFilterResultMap = {
+      Sign: setSignFilterResult,
+      Acrobat: setAcrobatFilterResult,
+      Certified: setCertifiedFilterResult,
+    };
+
+    const filteredData = isChecked
+      ? fetchSearchData.filter(filterMap[value])
+      : fetchSearchData;
+
+    setFilterResultMap[value](filteredData);
   };
 
   // Loading screen
@@ -162,81 +150,95 @@ export const SearchPage = () => {
   };
 
   return (
-    <div className="pageBackgroundContainer">
+    <View id="search-section">
       {/*********************************************************************
        *                     SEARCH BAR SECTION
        ********************************************************************/}
-      <div className="container containerBg">
-        <div className="content contentUpdate">
-          <div className="searchFilterContainer">
-            <div className="searchInputContainer">
-              <input
-                className="searchInputField"
-                type="text"
-                placeholder="Search for something"
+      <View id="container">
+        <Content id="content">
+          <View id="search-filter-container">
+            <View id="search-input-container">
+              <SearchField
+                id="search-field"
+                width="100%"
                 onChange={handleInputChange}
+                icon=""
+                aria-label="Search Box"
               />
-            </div>
+            </View>
 
-            <div className="filterIconContainer">
+            <View id="filter-icon-container">
               <div onClick={handleFilterClick}>
                 <FilterSVG />
               </div>
-            </div>
-          </div>
+            </View>
+          </View>
 
-          <h2>Results Found: {numberOfResults}</h2>
+          <Heading level={2}>Results Found: {numberOfResults}</Heading>
 
           {/*********************************************************************
            *                     FILTER DROPDOWN SECTION
            ********************************************************************/}
-          <div
-            className={
+          <View
+            id={
               toggleFilter
-                ? "filterDropdownContainer"
-                : "filterDropdownContainerHidden"
+                ? "filter-dropdown-container"
+                : "filter-dropdown-container-hidden"
             }
           >
-            <div className="searchCheckbox">
-              <h2>Filter By: </h2>
-            </div>
-            <div className="searchCheckbox">
-              <img src={SignLogo} alt="SignLogo"></img>
-              <h2>Sign</h2>
-              <input type="checkbox" value="Sign" onClick={handleCheckbox} />
-            </div>
-            <div className="searchCheckbox">
-              <img src={AcrobatLogo} alt="AcrobatLogo"></img>
-              <h2>Acrobat</h2>
-              <input type="checkbox" value="Acrobat" onClick={handleCheckbox} />
-            </div>
-            <div className="searchCheckbox">
-              <img src={AdobeLogo} alt="AdobeLogo"></img>
-              <h2>Certified</h2>
-              <input
-                type="checkbox"
-                value="Certified"
-                onClick={handleCheckbox}
+            <View id="search-checkbox">
+              <Heading level={2}>Filter By: </Heading>
+            </View>
+            <View id="search-checkbox">
+              <Image src={SignLogo} alt="Sign Logo" />
+              <Heading level={2}>Sign</Heading>
+              <Checkbox
+                value="Sign"
+                onChange={(isChecked) => handleCheckbox(isChecked, "Sign")}
+                aria-label="Sign Checkbox"
+                margin="0px"
               />
-            </div>
-          </div>
+            </View>
+            <View id="search-checkbox">
+              <Image src={AcrobatLogo} alt="Acrobat Logo" />
+              <Heading level={2}>Acrobat</Heading>
+              <Checkbox
+                value="Acrobat"
+                onChange={(isChecked) => handleCheckbox(isChecked, "Acrobat")}
+                aria-label="AcrobatCheckbox"
+              />
+            </View>
+            <View id="search-checkbox">
+              <Image src={AdobeLogo} alt="AdobeLogo" ari />
+              <Heading level={2}>Certified</Heading>
+              <Checkbox
+                value="Certified"
+                onChange={(isChecked) => handleCheckbox(isChecked, "Certified")}
+                aria-label="Certified Checkbox"
+              />
+            </View>
+          </View>
 
           {/*********************************************************************
            *                     RESULT CARD SECTION
            ********************************************************************/}
-          <div className="cardContainer">
+          <View id="card-container">
             {resultOutput.length === 0 ? (
-              <div>
-                <h2>No Result Found</h2>
-              </div>
+              <Content>
+                <Heading level={2}>No Result Found</Heading>
+              </Content>
             ) : (
               resultOutput.map((item) => {
                 return <InfoCard key={item.id} cardData={item} />;
               })
             )}
-          </div>
-        </div>
-      </div>
-    </div>
+          </View>
+        </Content>
+      </View>
+
+      <View id="navbar-background">
+        <Footer />
+      </View>
+    </View>
   );
 };

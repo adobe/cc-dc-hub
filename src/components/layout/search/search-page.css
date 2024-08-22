@@ -1,7 +1,7 @@
 /*****************************************************
                 SEARCH STYLES  
 *****************************************************/
-.container {
+#container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,37 +13,42 @@
   place-items: center;
   overflow: hidden;
   width: 100%;
+  background-image: radial-gradient(#d3d3d3 1px, rgb(241, 241, 241) 1px);
+  background-size: 20px 20px;
 }
 
-.content {
+#content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50%;
   margin-top: 75px;
+
+  margin-bottom: 100px;
+  color: black;
 }
 
-.pageBackgroundContainer {
+#search-section {
   /* width: 100vw; */
   height: 100%;
   background-color: white;
 }
 
-.pageBackgroundContainer p {
+#search-section p {
   text-shadow: none;
 }
 
-.pageBackgroundContainer h1 {
+#search-section h1 {
   color: white;
   text-shadow: none;
 }
 
 h2 {
-  color: black
+  color: black;
 }
 
-.cardContainer {
+#card-container {
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
   grid-template-columns: repeat(3, 1fr);
@@ -51,12 +56,7 @@ h2 {
   width: 100%;
 }
 
-.contentUpdate {
-  margin-bottom: 100px;
-  color: black;
-}
-
-.searchFilterContainer {
+#search-filter-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,12 +66,20 @@ h2 {
   margin-bottom: 15px;
 }
 
-.filterIconContainer {
+#filter-icon-container {
   cursor: pointer;
   position: relative;
 }
 
-.filterDropdownContainer {
+#navbar-background {
+  background-image: radial-gradient(black 1px, rgb(241, 241, 241) 1px);
+  background-size: 20px 20px;
+}
+
+/*****************************************************
+                FILTER STYLES  
+*****************************************************/
+#filter-dropdown-container {
   display: flex;
   flex-direction: row;
   margin-bottom: 25px;
@@ -81,31 +89,36 @@ h2 {
   transition: all 0.5s ease-in-out;
 }
 
-.filterDropdownContainerHidden {
+#filter-dropdown-container-hidden {
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: row;
   opacity: 0;
 }
 
-.searchCheckbox {
+#search-checkbox {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.searchCheckbox img {
+#search-checkbox img {
   width: 20px;
   height: 20px;
   margin: 0px 10px;
 }
 
-.searchCheckbox h2 {
+#search-checkbox h2 {
   font-size: 1rem;
   padding: 0px 10px;
+  margin: 0px;
 }
 
-.searchInputContainer {
+#search-checkbox label {
+  padding: 10px 10px;
+}
+
+#search-input-container {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -120,82 +133,82 @@ h2 {
   width: 950px;
   padding: 35px;
   margin: -83px auto 0 auto;
-  background-color: #FF7575;
+  background-color: #ff7575;
   border-radius: 85px;
-  box-shadow: 0 10px 40px #FF7C7C, 0 0 0 20px #ffffffeb;
+  box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
   transform: scale(0.6);
 }
 
-.containerBg {
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-image: url('../../../assets/ToolsBackground1.jpg');
+#search-field {
+  width: 100% !important;
+  height: 50px;
+}
+
+input#search-field {
+  background-color: white !important;
+  color: black !important;
 }
 
 /*****************************************************
                 MEDIA QUERIES  
 *****************************************************/
 @media (max-width: 767px) {
-  .cardContainer {
+  #card-container {
     /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .cardContainer {
+  #card-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .cardContainer {
+  #card-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
-
 @media (max-width: 767px) {
-  .content {
+  #content {
     width: 80%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content {
+  #content {
     width: 80%;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .content {
+  #content {
     width: 70%;
   }
 }
 
 @media (min-width: 1280px) and (max-width: 1619px) {
-  .content {
+  #content {
     width: 80%;
   }
 }
 
 @media (min-width: 1620px) and (max-width: 2559px) {
-  .content {
+  #content {
     width: 65%;
   }
 }
 
 @media (min-width: 2560px) and (max-width: 3839px) {
-  .content {
+  #content {
     width: 50%;
   }
 }
 
-
 @media (min-width: 3840px) {
-  .content {
+  #content {
     width: 40%;
   }
 }
