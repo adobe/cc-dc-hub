@@ -12,7 +12,6 @@ products:
   - Sign
 classification: private
 ---
-
 ## Using Redlining Solution
 Navigate to [https://make.powerautomate.com/solutions](https://make.powerautomate.com/solutions) and select `Import Solution`
 
