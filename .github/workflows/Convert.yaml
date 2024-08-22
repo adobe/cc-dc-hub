@@ -75,9 +75,11 @@ jobs:
           ref: main
       - name: Merge main into gh-pages
         run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git fetch origin
           git checkout gh-pages
-          git merge main --no-edit --allow-unrelated-histories
+          git merge origin main --no-edit --allow-unrelated-histories
           git push origin gh-pages
       - name: Install Dependencies
         run: npm ci
