@@ -1,5 +1,5 @@
-name: Hub File Conversion
-run-name: Create index.html file for feature
+name: Contribution Processor
+run-name: Process and Publish Contribution
 on:
   push:
     branches:
@@ -12,9 +12,9 @@ on:
     paths: 
       - 'public/features/**/hub.md'
 jobs:
-  convert_hub_file:
+  process_hub_file:
     runs-on: ubuntu-latest
-    name: Convert Hub File
+    name: Process Hub and Update Search
     steps:
       - run: echo "${{ github.event_name }} event detected."
       - name: Check out repository code
@@ -64,3 +64,22 @@ jobs:
           git add public/features/ public/data/pages/searchToolsCollection.json
           git commit -m "Convert hub.md and update search"
           git push
+  publish:
+    runs-on: ubuntu-latest
+    name: Deploy to GitHub Pages
+    needs: process_hub_file
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with: 
+          ref: main
+      - name: Merge main into gh-pages
+        run: |
+          git fetch origin
+          git checkout gh-pages
+          git merge main --no-edit
+          git push origin gh-pages
+      - name: Install Dependencies
+        run: npm ci
+      - name: Deploy to GH Pages
+        run: npm run deploy
