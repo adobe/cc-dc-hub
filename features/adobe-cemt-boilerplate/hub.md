@@ -34,7 +34,3 @@ Customers now have the ability to revisualize and rebuild their emails in ways t
 Please visit the Github Repo for more information.
 
 [Click Here To Go To Repo](https://github.com/adobe/sign-cemt-boilerplate)
-
-<!-- 
-    Let's see.
--->
