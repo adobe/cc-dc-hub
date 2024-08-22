@@ -8,6 +8,9 @@ export const ToolsDetailPage = () => {
   const [selectedTool, setSelectedTool] = useState();
 
   useEffect(() => {
+    
+    console.log(`Fetching tool data for ${params.id}`);
+
     (async () => {
       
       const searchData = await (await fetch(
@@ -22,7 +25,7 @@ export const ToolsDetailPage = () => {
         const tool = await response.json();
         setSelectedTool(tool);
       }
-      
+
     })();
   }, []);
 
@@ -41,10 +44,6 @@ export const ToolsDetailPage = () => {
           <ToolsDetailBody content={selectedTool.content} />
           <br />
           <br />
-        </>
-      ) || (
-        <>
-          Tool with id : {params.id} not found
         </>
       )}
     </>
