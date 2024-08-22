@@ -36,5 +36,5 @@ Please visit the Github Repo for more information.
 [Click Here To Go To Repo](https://github.com/adobe/sign-cemt-boilerplate)
 
 <!-- 
-    Additional adjustments.
+    Let's see.
 -->
