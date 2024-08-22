@@ -36,5 +36,5 @@ Please visit the Github Repo for more information.
 [Click Here To Go To Repo](https://github.com/adobe/sign-cemt-boilerplate)
 
 <!-- 
-    I can add this information and it will transform without being clear content on the page.
+    Adjusting content to trigger test.
 -->
