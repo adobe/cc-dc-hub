@@ -62,15 +62,6 @@ jobs:
           git add public/features/ public/data/pages/searchToolsCollection.json
           git commit -m "Convert hub.md and update search"
           git push
-          git status
-          git config pull.rebase true
-          git fetch origin
-          git checkout gh-pages
-          git status
-          git stash
-          git pull origin main --no-edit --allow-unrelated-histories
-      - name: Install Dependencies
-        run: npm ci
       - name: Deploy to GH Pages
         run: npm run deploy
         env: 
