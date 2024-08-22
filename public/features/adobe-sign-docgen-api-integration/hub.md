@@ -29,7 +29,7 @@ classification: private
 
 A sample web application has been created to showcase the integration of Document Generation - PDF services and Acrobat Sign.
 
-Use Case
+### Use Case
 
 This application is developed showcase the integration of Document Generation - PDF services and Acrobat Sign. The application can be re-used for development/integration with other web applications.
 
