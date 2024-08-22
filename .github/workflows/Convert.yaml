@@ -62,7 +62,10 @@ jobs:
           git add public/features/ public/data/pages/searchToolsCollection.json
           git commit -m "Convert hub.md and update search"
           git push
-      - name: Deploy to GH Pages
-        run: npm run deploy
-        env: 
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CI: ""
