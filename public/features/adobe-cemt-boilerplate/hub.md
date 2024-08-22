@@ -29,8 +29,6 @@ classification: private
 
 Customers now have the ability to revisualize and rebuild their emails in ways that will fundamentally change how their recipients understand and engage with them. Custom Email Templates (CEMT) not only allow you to revamp the HTML template that generates emails from your Adobe Sign account, but also lets you refurbish the standard email to match your company’s brand. You can remodel the template itself with your own familiar branding, color scheme, images, and text. You can also update the normally static structures and fully customize the page layout, the terminology used, and more.
 
-Validating a deployment.
-
 ## Installing CEMT Boilerplate
 
 Please visit the Github Repo for more information.
