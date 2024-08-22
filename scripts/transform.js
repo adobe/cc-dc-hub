@@ -24,7 +24,8 @@ const parseYamlHtml = (content, file) => {
         const dirPath = path.dirname(file);
         const root = dirPath.startsWith('/') ? dirPath : `/${dirPath}`;
 
-        y.id = root.replace(/\/public\/features\//, "");
+        const id = root.replace(/\/public\/features\//, "");
+        y.id = id.replaceAll("/","-");
         y.html = `${root}/index.html`;
         y.json = `${root}/index.json`;
         y.adobeCertified = false
