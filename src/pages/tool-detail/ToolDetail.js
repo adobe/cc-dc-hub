@@ -9,11 +9,20 @@ export const ToolsDetailPage = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(
-        `${process.env.PUBLIC_URL}/features/${params.id}/index.json`
-      );
-      const tool = await response.json();
-      setSelectedTool(tool);
+      
+      const searchData = await (await fetch(
+        `${process.env.PUBLIC_URL}/data/pages/searchToolsCollection.json`
+      )).json();
+      
+      const toolEntry = searchData.filter((entry) => entry.id === params.id);
+      if (toolEntry) {
+        const response = await fetch(
+          `${process.env.PUBLIC_URL}${toolEntry[0].path.replaceAll("public", "")}`
+        );
+        const tool = await response.json();
+        setSelectedTool(tool);
+      }
+      
     })();
   }, []);
 
@@ -32,6 +41,10 @@ export const ToolsDetailPage = () => {
           <ToolsDetailBody content={selectedTool.content} />
           <br />
           <br />
+        </>
+      ) || (
+        <>
+          Tool with id : {params.id} not found
         </>
       )}
     </>
