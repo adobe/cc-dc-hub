@@ -26,6 +26,6 @@ classification: private
 
 ## Your Content
 
-Last check for the evening.
+Your stuff goes here. 
 
 ![](https://github.com/NathanNguyen345/genesis/contributor/images/your-image.png)
