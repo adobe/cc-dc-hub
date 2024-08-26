@@ -1,116 +1,83 @@
 export const contributionData = [
   {
-    sectionTitle: 'Use Our Predefine Template',
-      sectionDescription: '',
+    sectionTitle: "Install the GitHub Application",
+    sectionDescription:
+      "To start contributing, you'll need to first install our GitHub application to enable the necessary integrations and permissions. You can find out more about the GitHub application in the steps below.",
     sectionDetails: [
-      { 
-        title: 'Clone Your Project:', 
-        description: 'Once your project is cloned, navigate to the directory public/data/tools.' 
+      {
+        title: "Steps to Install:",
+        description: [
+          "• Navigate to the application page: https://github.com/apps/genesis-contribution-automation [GitHub Application Link]",
+          "• Click on the 'Install' button.",
+          "• Select your account or organization where you want the application installed.",
+          "• Grant the necessary permissions as prompted.",
+          "* We recommend you only grant access to selected repositories over all repositories.",
+        ],
       },
-      { 
-        title: 'Locate the Template Folder:', 
-        description: 'Inside the tools folder, you will find a directory named template.' 
-      },
-      { 
-        title: 'Duplicate the Template:', 
-        description: 'Make a duplicate of the template folder and rename it to match your project name.' 
-      },
-      { 
-        title: 'Organize Images:', 
-        description: 'Place all the relevant images inside the image folder within your newly created project folder.' 
-      },
-      { 
-        title: 'Fill out Content Template:', 
-        description: 'Open the file named contentTemplate.json and fill in the details corresponding to your project.' 
-      }
-    ]
+    ],
   },
   {
-    sectionTitle: 'Update The ContentTemplate.json File',
-    sectionDescription: '',
+    sectionTitle: "Add Your Contribution",
+    sectionDescription:
+      "In order to contribution to the CC-DC-Hub, we will require that you create a hub.md file in your repository to submit your contribution. This file will contain all the necessary information about your contribution. You can find a copy of the hub.md template below.",
     sectionDetails: [
-      { 
-        title: 'Title:', 
-        description: 'The name of your project. This will be displayed on the the features page about your project.' 
+      {
+        title: "Steps to Add:",
+        description: [
+          "• Navigate to your repository.",
+          "• Create a new branch in your repository. Alternatively, you can also work off of the main branch.",
+          "• In your branch, create a new file named hub.md.",
+          "• Fill out the hub.md with the required content structure: https://github.com/adobe/cc-dc-hub/blob/main/public/templates/hub.md [Hub.md Template].",
+          "• Commit your changes with a descriptive commit message.",
+          "• Create a pull request to your main repository.",
+          "• Merge the changes into your main repository. This will create a pull request into the CC-DC-Hub repository for review.",
+          "• Someone from our team will review your submission to validate that it follows our guidelines.",
+          "• Once approved, your hub.md file will be merged into the CC-DC-Hub.",
+          "• Your contribution will be shown on the next deployment.",
+        ],
       },
-      { 
-        title: 'Tagline:', 
-        description: 'A short description of your project. This will be displayed on the search page.' 
-      },
-      { 
-        title: 'Version:', 
-        description: 'The current version of your project.' 
-      },
-      { 
-        title: 'Creator:', 
-        description: 'The name of the creator of the project.' 
-      },
-      { 
-        title: 'Key Features:', 
-        description: 'Three key features you would like to highlight about your project.' 
-      },
-      { 
-        title: 'Content:', 
-        description: 'A detailed description of your project. This is where you can format how your content will be displayed. Currently only three types of formatting are supported (text, images, and links).' 
-      },
-      { 
-        title: 'Text:', 
-        description: 'To add text, simply type your text in the content field.' 
-      },
-      { 
-        title: 'Images:', 
-        description: 'To add an image, provide the image name in the content field. The image must be located in the image folder of your project.' 
-      },
-      { 
-        title: 'Links:', 
-        description: 'To add a link, provide the link name in the content field.' 
-      },
-      { 
-        title: 'Installation:', 
-        description: 'A detailed description of how to install your project. If your project has a GitHub repository associated with it, this is a good area to supply a link to your repo. The structure follows the same concept as the content section. Please review the content section.' 
-      }
-    ]
+    ],
   },
   {
-    sectionTitle: 'Adding Your Tool',
-    sectionDescription: 'Once you\'ve fully filled out the contentTemplate.json and supplied the required images, please navigate to public/data/pages and open the searchToolsContent.json file. The structure of this page will be explained below:',
+    sectionTitle: "Modify Your Contribution",
+    sectionDescription:
+      "If you need to update your contribution after it has been submitted, you can modify the hub.md file.",
     sectionDetails: [
-      { 
-        title: 'id:', 
-        description: 'This is the name of your project. This must match the name of your project folder.' 
+      {
+        title: "Steps to Modify:",
+        description: [
+          "• Navigate to your repository.",
+          "• Create a new branch in your repository. Alternatively, you can also work off of the main branch.",
+          "• Make the necessary changes to the hub.md file.",
+          "• Commit the changes with a message detailing what was modified.",
+          "• Create a pull request to your main repository.",
+          "• Merge the changes into your main repository. This will create a pull request into the CC-DC-Hub repository for modification.",
+          "• Someone from our team will review your submission to validate that it follows our guidelines.",
+          "• Once approved, your hub.md file will be merged into the CC-DC-Hub.",
+          "• Your modified contribution will be shown on the next deployment.",
+        ],
       },
-      { 
-        title: 'title:', 
-        description: 'The title of the page. This will be displayed on the search page.' 
-      },
-      { 
-        title: 'desc:', 
-        description: 'A short description of your project. This will be displayed on the search page.' 
-      },
-      { 
-        title: 'featureType:', 
-        description: 'There\'s three options to choose from: "integration", "tool", and "sample". This will determine and categorize your submission.' 
-      },
-      { 
-        title: 'productType:', 
-        description: 'There\'s two option to choose from: "Sign" or "Acrobat". This will display an icon on the search page, so other users can easily identify the product your project is associated with your submission.' 
-      },
-      { 
-        title: 'adobeCertified:', 
-        description: 'There\'s two option to choose from: "true" or "false".Is this an Adobe certified project?' 
-      },
-      { 
-        title: 'featureFileName:', 
-        description: 'This will be the same as the id.' 
-      }
-    ]
+    ],
   },
   {
-    sectionTitle: 'Create A Pull Request',
-    sectionDescription: 'Once you\'ve fully added your submission, please commit and push to the repo and make a pull request. One of your team memebers will review your submission as needed.',
-  },
-  {
-    sectionTitle: 'Not Familiar With Github?',
-    sectionDescription: 'If you\'re not familiar with using GitHub, please use this link to submit your project.',
+    sectionTitle: "Delete Your Contribution",
+    sectionDescription:
+      "If you wish to remove your contribution, you can do so by deleting the hub.md in your repository. If you decided to completely delete your repository, this will trigger a deletion pull request in the CC-DC-Hub repository.",
+    sectionDetails: [
+      {
+        title: "Steps to Delete:",
+        description: [
+          "• Navigate to your fork of the repository.",
+          "• Create a new branch in your repository. Alternatively, you can also work off of the main branch.",
+          "• Delete the hub.md file.",
+          "• Commit the deletion with a descriptive message.",
+          "• Create a pull request to your main repository.",
+          "• Merge the changes into your main repository. This will create a pull request into the CC-DC-Hub repository for deletion.",
+          "• Someone from our team will review your submission.",
+          "• Once approved, your hub.md file will be deleted from the CC-DC-Hub.",
+          "• Your modified contribution will be shown on the next deployment.",
+        ],
+      },
+    ],
   },
 ];

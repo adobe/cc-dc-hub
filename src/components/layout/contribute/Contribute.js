@@ -17,16 +17,18 @@ export const Contribute = () => {
             <span className="splash-header">
               <b>Contribute?</b>
             </span>{" "}
-            We'd Love to Hear From You!
+            Find out how you can make a difference!
           </Heading>
-          <Button
-            align="center"
-            variant="accent"
-            height={"60px"}
-            width={"150px"}
-          >
-            Rate Now
-          </Button>
+          <a href="https://github.com/adobe/cc-dc-hub">
+            <Button
+              align="center"
+              variant="accent"
+              height={"60px"}
+              width={"150px"}
+            >
+              Find Out More
+            </Button>
+          </a>
         </Flex>
       </View>
     </View>

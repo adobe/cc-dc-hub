@@ -1,17 +1,44 @@
 .contribution-header {
-  height: 40vh;
-  margin-top: 5rem;
+  height: 55vh;
   text-align: center;
-  background-image: url(../../assets/ToolsBackground2.jpg);
+  background-image: url(../../assets/ContributionPageBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  /* background-color: #EEE; */
-  /* color: #777; */
+}
+
+.contribution-header::before {
+  height: 55%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contribution-header * {
+  position: relative;
+  z-index: 2;
+}
+
+#contribution-header-span {
+  color: #ffc55a;
+  font-weight: bold;
+}
+
+.contribution-header h1 {
+  font-size: 60px;
+}
+
+.contribution-header p {
+  font-size: 30px;
 }
 
 .contribution-title {
-  color: #FFC55A;
+  color: #ffc55a;
   text-transform: capitalize;
   font-weight: 700;
 }

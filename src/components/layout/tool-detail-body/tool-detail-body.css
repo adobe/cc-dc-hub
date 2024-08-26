@@ -1,0 +1,11 @@
+#tool-detail-body-section {
+  background-image: radial-gradient(#d3d3d3 1px, rgb(241, 241, 241) 1px);
+  background-size: 20px 20px;
+  color: black;
+}
+
+#tool-detail-body-section h2 {
+  color: #ffc55a;
+  text-transform: capitalize;
+  font-weight: 700;
+}

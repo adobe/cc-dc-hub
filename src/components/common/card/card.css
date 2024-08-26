@@ -1,24 +1,33 @@
 .card {
-  padding: 1rem;
+  padding: 3rem;
   background-color: white;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  border-top-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
-  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) */
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(73, 9, 194, .5);
+  border-radius: 0.5rem;
+  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  color: black;
 }
 
 .card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(73, 9, 194, .5);
+  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.3),
+    10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
 }
 
 .card-header {
-  margin-top: .625rem;
+  margin-top: 0.625rem;
   text-align: center;
   text-transform: capitalize;
+  color: #ffc55a;
+  font-weight: bold;
 }
 
 .card-section-header {
-  color: #FFC55A;
+  color: #ffc55a;
+  font-weight: bold;
+}
+
+#card-description {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }

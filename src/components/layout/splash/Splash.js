@@ -28,13 +28,13 @@ export const Splash = () => {
               </Heading>
               <Heading level={3}>
                 <span className="u-text-white">
-                  Seamlessly integrate and leverage cutting-edge Tolls to prople
+                  Seamlessly integrate and leverage cutting-edge tools to propel
                   your success
                   <br /> and unlock new horizons of achivement
                 </span>
               </Heading>
               <View marginTop="size-400">
-                <ButtonGroup align="center">
+                {/* <ButtonGroup align="center">
                   <Button
                     variant="accent"
                     width={{ base: "100%", M: "size-1600" }}
@@ -52,7 +52,7 @@ export const Splash = () => {
                   >
                     No, thanks
                   </Button>
-                </ButtonGroup>
+                </ButtonGroup> */}
               </View>
             </Flex>
           </Content>
