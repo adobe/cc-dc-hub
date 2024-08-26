@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cc-dc-hub/static/css/main.2766dcea.css",
-    "main.js": "/cc-dc-hub/static/js/main.5b53cdf7.js",
+    "main.css": "/cc-dc-hub/static/css/main.e951eea3.css",
+    "main.js": "/cc-dc-hub/static/js/main.b7b3b6d1.js",
     "static/js/453.85ba9d97.chunk.js": "/cc-dc-hub/static/js/453.85ba9d97.chunk.js",
     "static/media/ToolsHeaderImage2.png": "/cc-dc-hub/static/media/ToolsHeaderImage2.ca89ffbc4071dd0d381a.png",
     "static/media/ContrinuteSectionBackground.jpeg": "/cc-dc-hub/static/media/ContrinuteSectionBackground.4e67c2f96fa65f5bef89.jpeg",
@@ -13,12 +13,12 @@
     "static/media/AdobeLogo.png": "/cc-dc-hub/static/media/AdobeLogo.90ea8b44ff8abd035601.png",
     "static/media/CreativeCloud.png": "/cc-dc-hub/static/media/CreativeCloud.bd11b3b8361a753d583b.png",
     "index.html": "/cc-dc-hub/index.html",
-    "main.2766dcea.css.map": "/cc-dc-hub/static/css/main.2766dcea.css.map",
-    "main.5b53cdf7.js.map": "/cc-dc-hub/static/js/main.5b53cdf7.js.map",
+    "main.e951eea3.css.map": "/cc-dc-hub/static/css/main.e951eea3.css.map",
+    "main.b7b3b6d1.js.map": "/cc-dc-hub/static/js/main.b7b3b6d1.js.map",
     "453.85ba9d97.chunk.js.map": "/cc-dc-hub/static/js/453.85ba9d97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2766dcea.css",
-    "static/js/main.5b53cdf7.js"
+    "static/css/main.e951eea3.css",
+    "static/js/main.b7b3b6d1.js"
   ]
 }
