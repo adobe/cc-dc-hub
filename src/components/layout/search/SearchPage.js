@@ -25,6 +25,7 @@ import AcrobatLogo from "../../../assets/icons/AcrobatLogo.png";
 import SignLogo from "../../../assets/icons/SignLogo.png";
 import FilterSVG from "../../../assets/icons/FilterSVG";
 import { Footer } from "../../../components/layout/footer/Footer";
+import { Banner } from "../../../components/common/banner/Banner";
 import {
   SearchField,
   View,
@@ -154,6 +155,9 @@ export const SearchPage = () => {
       {/*********************************************************************
        *                     SEARCH BAR SECTION
        ********************************************************************/}
+      <Banner>
+        Please remember, the tools on this site are <b>not</b> supported by Adobe. Log issues to their respective projects, which you can find on their tool detail page.
+      </Banner>
       <View id="container">
         <Content id="content">
           <View id="search-filter-container">
