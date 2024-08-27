@@ -1,4 +1,3 @@
-const { dir } = require('console');
 const fs = require('fs');
 const path = require('path');
 
@@ -34,13 +33,7 @@ const deriveRepo = (file) => {
     let directory = path.dirname(file);
     const featuresRegEx = /(\/|.*\/|\.\.\/)?features\//g;
     directory = directory.replaceAll(featuresRegEx, '');
-    const segments = [
-        directory.slice(0, directory.indexOf('-')),
-        directory.slice(directory.indexOf('-') + 1)
-    ];  
-    console.log(segments);
-
-    return `https://github.com/${segments[0]}/${segments[1]}`;
+    return `https://github.com/${directory}`;
 }
 
 exports.deriveRepo = deriveRepo;
