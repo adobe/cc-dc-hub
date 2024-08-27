@@ -6,11 +6,6 @@ on:
       - main
     paths: 
       - 'public/features/**/hub.md'
-  pull_request: 
-    branches:
-      - main
-    paths: 
-      - 'public/features/**/hub.md'
 jobs:
   process_hub_file:
     runs-on: ubuntu-latest
