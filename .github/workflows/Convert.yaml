@@ -6,11 +6,6 @@ on:
       - main
     paths: 
       - 'public/features/**/hub.md'
-  pull_request: 
-    branches:
-      - main
-    paths: 
-      - 'public/features/**/hub.md'
 jobs:
   process_hub_file:
     runs-on: ubuntu-latest
@@ -28,7 +23,7 @@ jobs:
       - name: Install
         run: npm ci
       - id: file_chnages
-        uses: trilom/file-changes-action@v1.2.3
+        uses: trilom/file-changes-action@v1.2.4
         with:
           output: 'json'
           fileOutput: 'json'
