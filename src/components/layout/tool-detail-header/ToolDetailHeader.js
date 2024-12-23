@@ -3,8 +3,12 @@ import "../../../index.css";
 import "../../../assets/ToolsHeaderImage.jpeg";
 import React from "react";
 import { Flex, Heading, View, Image, Button } from "@adobe/react-spectrum";
+import LeaveSiteDialog from "../../common/dialog/LeaveSiteDialog";
 
 export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
+
+  const [showDialog, setShowDialog] = React.useState(false);
+
   return (
     <div className="tool-detail-header">
       <View id="ResponsiveContainer">
@@ -27,7 +31,7 @@ export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
                 label="Repo"
                 size="large"
                 variant="accent"
-                onPress={() => window.open(repoUrl, "_self")}
+                onPress={() => setShowDialog(true)}
               >
                 Repo
               </Button>
@@ -53,6 +57,11 @@ export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
               />
             </Flex>
           </View>
+          <LeaveSiteDialog 
+            isOpen={showDialog} 
+            primaryAction={() => window.open(repoUrl, "_self")} 
+            cancelAction={() => setShowDialog(false)}
+          />
         </Flex>
       </View>
     </div>
