@@ -5,6 +5,10 @@ import { View } from "@adobe/react-spectrum";
 export const Banner = ({children, type}) => {
 
     const types = {
+        disclaimer: {
+            bgColor: "gray-50",
+            style: "banner--disclaimer"
+        },
         adobeRed: {
             bgColor: "red-500",
             style: "banner--adobe-red"
@@ -15,7 +19,7 @@ export const Banner = ({children, type}) => {
         }
     }
 
-    const _type = types[type] || types.adobeRed;
+    const _type = types[type] || types.disclaimer;
 
     return (
         <View 
@@ -23,8 +27,7 @@ export const Banner = ({children, type}) => {
             padding="size-100">
             <Flex 
                 justifyContent="center" 
-                margin="1em" 
-                backgroundColor="red500">
+                margin="1em">
                 <div className={`banner ${_type.style}`}>
                     {children}
                 </div>

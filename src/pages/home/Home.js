@@ -22,7 +22,7 @@ export const HomePage = () => {
       <Splash data={landingPageData.Splash} />
       {/* <Tools data={landingPageData.Tools} /> */}
       <Banner>
-        Please remember, the tools on this site are <b>not</b> supported by Adobe. Log issues to their respective projects, which you can find on their tool detail page.
+        The tools listed on this site are developed and licensed by third parties and are <b>not</b> supported by Adobe. Please log any issues with the applicable project.
       </Banner>
       <View id="background-overlay">
         <Feature data={landingPageData.Feature} />
