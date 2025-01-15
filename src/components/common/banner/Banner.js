@@ -6,7 +6,7 @@ export const Banner = ({children, type}) => {
 
     const types = {
         disclaimer: {
-            bgColor: "gray-50",
+            bgColor: "gray-900",
             style: "banner--disclaimer"
         },
         adobeRed: {
