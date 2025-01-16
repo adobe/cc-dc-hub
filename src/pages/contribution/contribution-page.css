@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  margin-top: -7vh;
 }
 
 .contribution-header::before {
@@ -15,7 +16,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   z-index: 1;
 }
 
@@ -30,7 +31,8 @@
 }
 
 .contribution-header h1 {
-  font-size: 60px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: clamp(1.5rem, 5vw, 60px); /* Minimum, responsive, maximum size */
 }
 
 .contribution-header p {
