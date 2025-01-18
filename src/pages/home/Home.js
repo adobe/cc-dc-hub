@@ -22,7 +22,7 @@ export const HomePage = () => {
       </Banner>
       <View id="background-overlay">
         <Feature data={landingPageData.Feature} />
-        {/* <Apps data={landingPageData.Apps} /> */}
+        <Apps data={landingPageData.Apps} />
         <Contribute data={landingPageData.Contribute} />
         <Footer data={landingPageData.Footer} />
       </View>

@@ -2,67 +2,64 @@
                 BUTTON STYLES  
 *****************************************************/
 .button {
-  background-color: #DA6077;
+  background-color: #da6077;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   color: #fff;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: clamp(10px, 3vw, 10px);
   font-weight: 500;
   padding: 0.5rem 1rem;
   transition: all 0.3s ease-in-out;
-  padding: 1rem 2rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+  padding: 1em 2em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   font-weight: bold;
 }
 
 .button:hover {
-  background-color: #FFC55A;
+  background-color: #ffc55a;
   transition: all 0.3s ease;
 }
 
 .blue {
-  background-color: #1473E6;
+  background-color: #1473e6;
 }
 
 .blue:hover {
-  background-color: #E84F47;
+  background-color: #e84f47;
   transition: all 0.3s ease;
 }
 
 .saerch {
-  background-color: #E84F47;
+  background-color: #e84f47;
 }
 
 .integrations {
-  background-color: #DA7A30;
+  background-color: #da7a30;
 }
 
 .samples {
-  background-color: #5000CA;
+  background-color: #5000ca;
 }
 
-/* .tools { */
-  /* background-color: #449947; */
-/* } */
-
 .teal {
-  background-color: #56BDDF;
+  background-color: #56bddf;
 }
 
 /*****************************************************
                   MEDUIA QUERIES  
   *****************************************************/
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .button {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .button {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }

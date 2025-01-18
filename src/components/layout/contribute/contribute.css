@@ -1,10 +1,29 @@
 #contribute {
   height: 30vh;
   text-align: center;
+  padding-bottom: 5vh;
 }
 
 #contribute h1 {
   font-size: clamp(1.5rem, 5vw, 40px); /* Minimum, responsive, maximum size */
   font-weight: bold;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+}
+
+#contribute button {
+  background-color: #1473e6;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  padding: 1em 2em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+#contribute button span {
+  font-size: clamp(10px, 4vw, 12px);
 }

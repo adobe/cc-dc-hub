@@ -7,7 +7,7 @@ export const Splash = () => {
     <View id="splash-section">
       <View id="ResponsiveContainer">
         <View id="intro">
-          <Content id="col-md-8">
+          <Content id="splash-content">
             <Flex direction="column" justifyContent="center">
               <Heading level={1}>
                 <span className="splash-header u-font-weight-bold">

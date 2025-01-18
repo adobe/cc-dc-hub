@@ -10,6 +10,6 @@
 }
 
 #features h1 {
-  font-size: clamp(1.5rem, 5vw, 60px); /* Minimum, responsive, maximum size */
+  font-size: clamp(1.5rem, 5vw, 60px);
   font-weight: bold;
 }

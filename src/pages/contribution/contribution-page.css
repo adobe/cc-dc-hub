@@ -32,7 +32,13 @@
 
 .contribution-header h1 {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  font-size: clamp(1.5rem, 5vw, 60px); /* Minimum, responsive, maximum size */
+  font-size: clamp(2.4rem, 5vw, 60px);
+}
+
+#contribution h3 p {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: clamp(1rem, 3vw, 30px);
+  text-align: center;
 }
 
 .contribution-header p {

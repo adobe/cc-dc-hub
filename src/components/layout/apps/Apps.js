@@ -10,7 +10,13 @@ export const Apps = (props) => {
   return (
     <View id="apps">
       <View id="ResponsiveContainer">
-        <Flex width="100%" justifyContent="space-between">
+        <Flex
+          width="100%"
+          justifyContent="center"
+          wrap="wrap"
+          gap="size-200"
+          alignItems="center"
+        >
           {imageList.map((image, index) => (
             <View>
               <img key={index} src={image} className="app-img" alt="appIcon" />

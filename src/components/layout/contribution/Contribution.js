@@ -10,15 +10,17 @@ export const Contributions = (props) => {
   return (
     <>
       <View id="contribution-section">
-        <Content id="contribution-container">
-          <Flex justifyContent="space-between" direction={"column"}>
-            {contributionData.map((contribution) => (
-              <div className="card-container">
-                <Card record={contribution} />
-              </div>
-            ))}
-          </Flex>
-        </Content>
+        <View id="ResponsiveContainer">
+          <Content id="contribution-container">
+            <Flex justifyContent="space-between" direction={"column"}>
+              {contributionData.map((contribution) => (
+                <div className="card-container">
+                  <Card record={contribution} />
+                </div>
+              ))}
+            </Flex>
+          </Content>
+        </View>
       </View>
       <View id="navbar-background">
         <Footer />

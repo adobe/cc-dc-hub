@@ -2,19 +2,16 @@ import { View } from "@adobe/react-spectrum";
 import "./navbar.css";
 import "../../../index.css";
 import React from "react";
-import { Flex } from "@adobe/react-spectrum";
 import { Link } from "react-router-dom";
 import Rail from "@spectrum-icons/workflow/Rail";
 
 export const Navbar = () => {
   return (
-    <nav id="menu" class="navbar navbar-expand-lg navbar-dark sticky-top">
-      <View>
-        <div className="navbar-header">
-          <a className="navbar-brand page-scroll header-title" href="/">
-            Community Source Hub
-          </a>
-        </div>
+    <nav id="menu" className="navbar navbar-expand-lg navbar-dark sticky-top">
+      <View id="navbar-header">
+        <a className="navbar-brand page-scroll header-title" href="/">
+          Community Source Hub
+        </a>
       </View>
 
       <button

@@ -27,6 +27,10 @@
   min-height: 250px;
 }
 
+#info-card-title {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 #info-card-item {
   display: flex;
   flex-direction: row;
@@ -53,7 +57,7 @@
 #info-product-icon {
   width: 30px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 5px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
@@ -63,7 +67,6 @@
 *****************************************************/
 @media (max-width: 767px) {
   #item-desc {
-    font-size: 0.6rem;
     text-align: left;
   }
 
