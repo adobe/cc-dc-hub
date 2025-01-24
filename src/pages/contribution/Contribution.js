@@ -8,7 +8,7 @@ import { Flex, Heading, View } from "@adobe/react-spectrum";
 export const ContributionPage = () => {
   return (
     <>
-      <div className="contribution">
+      <div id="contribution">
         <div className="contribution-header">
           <View id="ResponsiveContainer">
             <Flex
@@ -16,6 +16,7 @@ export const ContributionPage = () => {
               justifyContent={"center"}
               alignItems={"center"}
               height={"100%"}
+              padding={"1em"}
             >
               <Heading level={1}>
                 <span className="u-text-white u-font-weight-bold">

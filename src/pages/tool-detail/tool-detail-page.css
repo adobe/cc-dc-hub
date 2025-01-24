@@ -5,3 +5,28 @@
   background-image: radial-gradient(#d3d3d3 1px, rgb(241, 241, 241) 1px);
   background-size: 20px 20px;
 }
+
+#tool-detail-header {
+  padding: 1em;
+}
+
+#repo-button {
+  background-color: #1473e6;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: clamp(10px, 3vw, 14px);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  padding: 1em 2em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #tool-detail-header-right {
+    display: none;
+  }
+}

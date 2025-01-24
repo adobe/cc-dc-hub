@@ -12,7 +12,7 @@ export const Contribute = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Heading level={1} alignSelf="center" marginBottom="size-400">
+          <Heading level={1} alignSelf="center">
             Like to{" "}
             <span className="splash-header">
               <b>Contribute?</b>

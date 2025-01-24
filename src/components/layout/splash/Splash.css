@@ -10,6 +10,7 @@
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  margin-top: -7vh;
 }
 
 /* Header Section */
@@ -23,11 +24,11 @@
 }
 
 #intro h1 {
-  font-size: 60px;
+  font-size: clamp(2.4rem, 5vw, 60px);
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #intro h3 {
-  font-size: 30px;
+  font-size: clamp(1rem, 3vw, 30px);
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }

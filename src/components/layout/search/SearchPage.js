@@ -156,7 +156,9 @@ export const SearchPage = () => {
        *                     SEARCH BAR SECTION
        ********************************************************************/}
       <Banner>
-        Please remember, the tools on this site are <b>not</b> supported by Adobe. Log issues to their respective projects, which you can find on their tool detail page.
+        Please remember, the tools on this site are <b>not</b> supported by
+        Adobe. Log issues to their respective projects, which you can find on
+        their tool detail page.
       </Banner>
       <View id="container">
         <Content id="content">

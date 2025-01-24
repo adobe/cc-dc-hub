@@ -1,5 +1,5 @@
 #contribution-section {
-  padding: 2rem;
+  padding: 2rem 0;
   display: flex;
   font-family: Poppins, sans-serif;
   justify-content: center;
@@ -9,6 +9,6 @@
 }
 
 .card-container {
-  width: 60vw;
+  /* width: clamp(100%, 60vw, 100%); */
   margin: 1rem;
 }

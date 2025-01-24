@@ -6,19 +6,19 @@ import { Flex, Heading, View, Image, Button } from "@adobe/react-spectrum";
 import LeaveSiteDialog from "../../common/dialog/LeaveSiteDialog";
 
 export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
-
   const [showDialog, setShowDialog] = React.useState(false);
 
   return (
     <div className="tool-detail-header">
       <View id="ResponsiveContainer">
         <Flex
+          id="tool-detail-header"
           justifyContent={"center"}
           alignItems={"center"}
           height={"100%"}
           paddingTop="150px"
         >
-          <View width="100%">
+          <View id="tool-detail-header-left" width="100%">
             <Heading level={1}>
               <span className="u-text-whit u-font-weight-bold">{title}</span>
             </Heading>
@@ -28,6 +28,7 @@ export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
             <br />
             <Flex wrap gap="size-250">
               <Button
+                id="repo-button"
                 label="Repo"
                 size="large"
                 variant="accent"
@@ -48,7 +49,7 @@ export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
               )}
             </Flex>
           </View>
-          <View width="40%">
+          <View id="tool-detail-header-right" width="40%">
             <Flex justifyContent="center">
               <Image
                 src={require("../../../assets/ToolsHeaderImage2.png")}
@@ -57,9 +58,9 @@ export const ToolsDetailHeader = ({ title, description, repoUrl, docUrl }) => {
               />
             </Flex>
           </View>
-          <LeaveSiteDialog 
-            isOpen={showDialog} 
-            primaryAction={() => window.open(repoUrl, "_self")} 
+          <LeaveSiteDialog
+            isOpen={showDialog}
+            primaryAction={() => window.open(repoUrl, "_self")}
             cancelAction={() => setShowDialog(false)}
           />
         </Flex>

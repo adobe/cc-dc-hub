@@ -9,8 +9,6 @@ export const ToolsDetailPage = () => {
   const [selectedTool, setSelectedTool] = useState();
 
   useEffect(() => {
-    console.log(`Fetching tool data for ${params.id}`);
-
     (async () => {
       const searchData = await (
         await fetch(

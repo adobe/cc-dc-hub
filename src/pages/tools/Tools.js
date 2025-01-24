@@ -17,7 +17,9 @@ export const ToolsPage = () => {
           >
             <Heading level={1}>
               <span className="u-text-white u-font-weight-bold">
-                Find The Perfect Solution For Your Business
+                Find The Perfect{" "}
+                <span id="contribution-header-span">Solution</span> For Your
+                Business
               </span>
             </Heading>
             <Heading level={3}>

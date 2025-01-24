@@ -8,11 +8,12 @@ export const Footer = () => {
   return (
     <Ftr marginBottom="10px">
       <Banner>
-            This is a community-driven site where creatives and developers come together to 
-            create some amazing tools and resources for the Adobe community. And while awesome, 
-            please remember that these tools are developed and licensed by third parties and 
-            are not officially supported – in any part – by Adobe. Issues should be logged 
-            in the associated tool's repository, which can be found on the tool detail page.
+        This is a community-driven site where creatives and developers come
+        together to create some amazing tools and resources for the Adobe
+        community. And while awesome, please remember that these tools are
+        developed and licensed by third parties and are not officially supported
+        – in any part – by Adobe. Issues should be logged in the associated
+        tool's repository, which can be found on the tool detail page.
       </Banner>
       <View id="footer">
         <View id="ResponsiveContainer">
@@ -21,6 +22,7 @@ export const Footer = () => {
             height="100%"
             direction="row"
             justifyContent="space-between"
+            padding="1em"
           >
             <View>
               <Heading level={4}>
